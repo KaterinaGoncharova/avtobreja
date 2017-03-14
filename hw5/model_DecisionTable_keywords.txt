@@ -1,0 +1,58 @@
+﻿=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     dataset_keywords-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    200
+Attributes:   8
+              ï»¿prevword
+              nextword
+              prevtag
+              nexttag
+              class
+              vozniknut
+              nastoyashchij
+              ves
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 200
+Number of Rules : 100
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 32
+	Merit of best subset found:   95.5  
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,8
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         191               95.5    %
+Incorrectly Classified Instances         9                4.5    %
+Kappa statistic                          0.5887
+Mean absolute error                      0.1965
+Root mean squared error                  0.2709
+Relative absolute error                129.9708 %
+Root relative squared error             99.7496 %
+Total Number of Instances              200     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,563    0,953      1,000    0,976      0,646    0,816     0,975     0
+                 0,438    0,000    1,000      0,438    0,609      0,646    0,816     0,547     1
+Weighted Avg.    0,955    0,518    0,957      0,955    0,947      0,646    0,816     0,941     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 184   0 |   a = 0
+   9   7 |   b = 1
