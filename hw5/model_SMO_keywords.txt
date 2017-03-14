@@ -1,0 +1,2303 @@
+﻿=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     dataset_keywords-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    200
+Attributes:   8
+              ï»¿prevword
+              nextword
+              prevtag
+              nexttag
+              class
+              vozniknut
+              nastoyashchij
+              ves
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.564  * (normalized) ï»¿prevword=v
+ +       0.1884 * (normalized) ï»¿prevword=postoyannyj
+ +       0.4329 * (normalized) ï»¿prevword=.
+ +      -0.4801 * (normalized) ï»¿prevword=partiya
+ +      -0.6391 * (normalized) ï»¿prevword=k
+ +       0.1651 * (normalized) ï»¿prevword=i
+ +       0.2646 * (normalized) ï»¿prevword=dlya
+ +       0.3671 * (normalized) ï»¿prevword=o
+ +       0.3064 * (normalized) ï»¿prevword=pobeda
+ +      -0.4811 * (normalized) ï»¿prevword=vremya
+ +       0.288  * (normalized) ï»¿prevword=vozniknut
+ +       0.1518 * (normalized) ï»¿prevword=chto
+ +      -0.1684 * (normalized) nextword=ne
+ +      -0.168  * (normalized) nextword=.
+ +       0.1884 * (normalized) nextword=nevozmozhno
+ +       0.3671 * (normalized) nextword=i
+ +      -0.1304 * (normalized) nextword=takoj
+ +      -0.2439 * (normalized) nextword=byt
+ +      -0.142  * (normalized) nextword=poluzabytyj
+ +      -0.1112 * (normalized) nextword=splav
+ +      -0.225  * (normalized) nextword=eshchyo
+ +       0.3064 * (normalized) nextword=nad
+ +       0.1651 * (normalized) nextword=vechnyj
+ +      -0.1417 * (normalized) nextword=pobuditelnyj
+ +      -0.1127 * (normalized) nextword=individ
+ +       0.2646 * (normalized) nextword=na
+ +       0.1518 * (normalized) nextword=proniknut
+ +      -0.5714 * (normalized) prevtag=prep
+ +       0.1884 * (normalized) prevtag=adj
+ +       0.4329 * (normalized) prevtag=.
+ +      -0.6548 * (normalized) prevtag=noun
+ +       0.3169 * (normalized) prevtag=conj
+ +       0.288  * (normalized) prevtag=verb
+ +      -0.1684 * (normalized) nexttag=neg
+ +      -0.1304 * (normalized) nexttag=pronoun
+ +       0.571  * (normalized) nexttag=prep
+ +      -0.168  * (normalized) nexttag=.
+ +      -0.0366 * (normalized) nexttag=adv
+ +       0.3671 * (normalized) nexttag=conj
+ +      -0.2239 * (normalized) nexttag=noun
+ +      -0.1186 * (normalized) nexttag=adj
+ +      -0.0921 * (normalized) nexttag=verb
+ +       0.288  * (normalized) vozniknut=1
+ +       0.4711
+
+Number of kernel evaluations: 249 (96.126% cached)
+
+Classifier for classes: 0, 2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2946 * (normalized) ï»¿prevword=svoj
+ +      -1.3773 * (normalized) ï»¿prevword=v
+ +       0.071  * (normalized) ï»¿prevword=.
+ +       0.395  * (normalized) ï»¿prevword=telo
+ +       0.6224 * (normalized) ï»¿prevword=na
+ +       0.2493 * (normalized) ï»¿prevword=poskolku
+ +      -1      * (normalized) ï»¿prevword=partiya
+ +       0.3937 * (normalized) ï»¿prevword=strahovanie
+ +      -0.0337 * (normalized) ï»¿prevword=k
+ +       0.2202 * (normalized) ï»¿prevword=god
+ +       0.3944 * (normalized) ï»¿prevword=okonchanie
+ +       0.1651 * (normalized) ï»¿prevword=uslovie
+ +      -0      * (normalized) ï»¿prevword=ego
+ +       0.1286 * (normalized) ï»¿prevword=posle
+ +       0      * (normalized) ï»¿prevword=vechnyj
+ +       0.2494 * (normalized) ï»¿prevword=najti
+ +       0.2272 * (normalized) ï»¿prevword=chelovecheskij
+ +      -1      * (normalized) ï»¿prevword=vremya
+ +       0.1651 * (normalized) nextword=v
+ +       0.1607 * (normalized) nextword=.
+ +       0.071  * (normalized) nextword=i
+ +      -0.58   * (normalized) nextword=takoj
+ +       0.2493 * (normalized) nextword=chelovecheskij
+ +       0.1103 * (normalized) nextword=posle
+ +      -0.5597 * (normalized) nextword=poluzabytyj
+ +      -0.3664 * (normalized) nextword=splav
+ +      -0.625  * (normalized) nextword=eshchyo
+ +       0.1286 * (normalized) nextword=Hristos
+ +       0.2494 * (normalized) nextword=vechnyj
+ +       0.1371 * (normalized) nextword=on
+ +       0.2908 * (normalized) nextword=bozhestvo
+ +      -0.5598 * (normalized) nextword=pobuditelnyj
+ +      -0.3661 * (normalized) nextword=individ
+ +       0.1099 * (normalized) nextword=u
+ +       0.1575 * (normalized) nextword=svyashchennyj
+ +       1      * (normalized) nextword=organizm
+ +       0.2272 * (normalized) nextword=ezhegodno
+ +       0.2946 * (normalized) prevtag=pronoun
+ +      -0.66   * (normalized) prevtag=prep
+ +       0.2272 * (normalized) prevtag=adj
+ +       0.071  * (normalized) prevtag=.
+ +      -0.4317 * (normalized) prevtag=noun
+ +       0.2493 * (normalized) prevtag=conj
+ +       0.2494 * (normalized) prevtag=verb
+ +      -0.4428 * (normalized) nexttag=pronoun
+ +       0.3853 * (normalized) nexttag=prep
+ +       0.1607 * (normalized) nexttag=.
+ +      -0.3978 * (normalized) nexttag=adv
+ +       0.071  * (normalized) nexttag=conj
+ +       0.6869 * (normalized) nexttag=noun
+ +      -0.4633 * (normalized) nexttag=adj
+ +       0.716 
+
+Number of kernel evaluations: 1063 (90.09% cached)
+
+Classifier for classes: 0, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.4984 * (normalized) ï»¿prevword=v
+ +       0.2705 * (normalized) ï»¿prevword=nastoyashchij
+ +      -0.7976 * (normalized) ï»¿prevword=partiya
+ +      -0.1919 * (normalized) ï»¿prevword=k
+ +       0.4061 * (normalized) ï»¿prevword=a
+ +       1.2033 * (normalized) ï»¿prevword=polnota
+ +       0.4053 * (normalized) ï»¿prevword=on
+ +      -0.7973 * (normalized) ï»¿prevword=vremya
+ +       0.096  * (normalized) nextword=ne
+ +       0.0959 * (normalized) nextword=.
+ +      -0.0575 * (normalized) nextword=takoj
+ +      -0.0384 * (normalized) nextword=poluzabytyj
+ +      -0.0577 * (normalized) nextword=eshchyo
+ +      -0.0383 * (normalized) nextword=pobuditelnyj
+ +       0.4053 * (normalized) prevtag=pronoun
+ +      -0.6903 * (normalized) prevtag=prep
+ +       0.2705 * (normalized) prevtag=adj
+ +      -0.3916 * (normalized) prevtag=noun
+ +       0.4061 * (normalized) prevtag=conj
+ +       0.096  * (normalized) nexttag=neg
+ +      -0.0575 * (normalized) nexttag=pronoun
+ +       0.0959 * (normalized) nexttag=.
+ +      -0.0577 * (normalized) nexttag=adv
+ +      -0.0767 * (normalized) nexttag=adj
+ +       0.2705 * (normalized) nastoyashchij=1
+ -       0.0033
+
+Number of kernel evaluations: 172 (93.402% cached)
+
+Classifier for classes: 0, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.047  * (normalized) ï»¿prevword=nash
+ +       0.0466 * (normalized) ï»¿prevword=svoj
+ +      -0.2324 * (normalized) ï»¿prevword=v
+ +       0      * (normalized) ï»¿prevword=ves
+ +       0.0026 * (normalized) ï»¿prevword=.
+ +       0.1061 * (normalized) ï»¿prevword=moj
+ +       0.0401 * (normalized) ï»¿prevword=sluchaj
+ +      -1      * (normalized) ï»¿prevword=partiya
+ +      -1.2564 * (normalized) ï»¿prevword=k
+ +       0.0496 * (normalized) ï»¿prevword=oblegchat
+ +       0.0403 * (normalized) ï»¿prevword=samostoyatelnyj
+ +       0.6821 * (normalized) ï»¿prevword=dlya
+ +       0.0411 * (normalized) ï»¿prevword=professionalnyj
+ +       0.4128 * (normalized) ï»¿prevword=stil
+ +       0.0489 * (normalized) ï»¿prevword=schitat
+ +       0.0485 * (normalized) ï»¿prevword=ukrashat
+ +       0.0252 * (normalized) ï»¿prevword=radost
+ +       0.4137 * (normalized) ï»¿prevword=Vinin
+ +       0.0496 * (normalized) ï»¿prevword=prozhit
+ +       0.0415 * (normalized) ï»¿prevword=lichnyj
+ +       0.1345 * (normalized) ï»¿prevword=tolko
+ +       0.1181 * (normalized) ï»¿prevword=iz
+ +       0.0257 * (normalized) ï»¿prevword=smysl
+ +       0.118  * (normalized) ï»¿prevword=pri
+ +       0.4133 * (normalized) ï»¿prevword=period
+ +      -1      * (normalized) ï»¿prevword=vremya
+ +       0.0874 * (normalized) ï»¿prevword=minuta
+ +       0.0406 * (normalized) ï»¿prevword=posleduyushchij
+ +       0.0416 * (normalized) ï»¿prevword=novyj
+ +       0.4141 * (normalized) ï»¿prevword=poehtizatsiya
+ +       0.2882 * (normalized) nextword=ne
+ +       0.3098 * (normalized) nextword=ya
+ +      -0.1688 * (normalized) nextword=.
+ +       0.0257 * (normalized) nextword=i
+ +      -0.6646 * (normalized) nextword=takoj
+ +       0.0401 * (normalized) nextword=uzhasno
+ +       0.311  * (normalized) nextword=ona
+ +       0.3101 * (normalized) nextword=kotoryj
+ +       0.0252 * (normalized) nextword=posle
+ +      -1      * (normalized) nextword=byt
+ +       0.4685 * (normalized) nextword=tserkov
+ +      -0.1334 * (normalized) nextword=poluzabytyj
+ +       0.0026 * (normalized) nextword=nachinat
+ +       0.4679 * (normalized) nextword=Katriehl
+ +      -1      * (normalized) nextword=splav
+ +      -0.2196 * (normalized) nextword=eshchyo
+ +       0.6759 * (normalized) nextword=uvidet
+ +       0.1345 * (normalized) nextword=posvyatit
+ +       0.1181 * (normalized) nextword=podvizhnik
+ +       0.4677 * (normalized) nextword=Spasitel
+ +       0.118  * (normalized) nextword=Pushkin
+ +      -0.1327 * (normalized) nextword=pobuditelnyj
+ +      -1      * (normalized) nextword=individ
+ +       0.4686 * (normalized) nextword=progulka
+ +       0.0874 * (normalized) nextword=kazatsya
+ +       0.1997 * (normalized) prevtag=pronoun
+ +      -0.4362 * (normalized) prevtag=prep
+ +       0.205  * (normalized) prevtag=adj
+ +       0.0026 * (normalized) prevtag=.
+ +      -0.1679 * (normalized) prevtag=noun
+ +       0.1967 * (normalized) prevtag=verb
+ +       0.2882 * (normalized) nexttag=neg
+ +       0.2663 * (normalized) nexttag=pronoun
+ +       0.0252 * (normalized) nexttag=prep
+ +      -0.1688 * (normalized) nexttag=.
+ +      -0.1795 * (normalized) nexttag=adv
+ +       0.0257 * (normalized) nexttag=conj
+ +       0.1087 * (normalized) nexttag=noun
+ +      -0.2661 * (normalized) nexttag=adj
+ +      -0.0995 * (normalized) nexttag=verb
+ +       0.1746 * (normalized) ves=1
+ +       1.0918
+
+Number of kernel evaluations: 2098 (91.671% cached)
+
+Classifier for classes: 0, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0925 * (normalized) ï»¿prevword=nash
+ +      -0.9994 * (normalized) ï»¿prevword=v
+ +       0.1563 * (normalized) ï»¿prevword=.
+ +       0.0463 * (normalized) ï»¿prevword=tvoj
+ +       1      * (normalized) ï»¿prevword=na
+ +       0.1618 * (normalized) ï»¿prevword=kak
+ +       0.478  * (normalized) ï»¿prevword=obraz
+ +       0.0167 * (normalized) ï»¿prevword=semejnaya
+ +      -1      * (normalized) ï»¿prevword=partiya
+ +       0.4782 * (normalized) ï»¿prevword=proyavlenie
+ +      -0.6792 * (normalized) ï»¿prevword=k
+ +       0.0388 * (normalized) ï»¿prevword=dovolnyj
+ +       0.0394 * (normalized) ï»¿prevword=mestnaya
+ +       0.0923 * (normalized) ï»¿prevword=povsednevnyj
+ +       0.478  * (normalized) ï»¿prevword=norma
+ +       0.0923 * (normalized) ï»¿prevword=ego
+ +       0.2001 * (normalized) ï»¿prevword=opyt
+ +      -1      * (normalized) ï»¿prevword=vremya
+ +       0.2112 * (normalized) ï»¿prevword=storona
+ +       0.0396 * (normalized) ï»¿prevword=ehmotsionalnyj
+ +       0.0393 * (normalized) ï»¿prevword=nyneshnij
+ +       0.0178 * (normalized) ï»¿prevword=kochevoj
+ +       0.0005 * (normalized) nextword=.
+ +       0.0345 * (normalized) nextword=i
+ +      -0.1971 * (normalized) nextword=takoj
+ +       0.0463 * (normalized) nextword=obyazatelno
+ +      -0.0755 * (normalized) nextword=byt
+ +      -0.1732 * (normalized) nextword=poluzabytyj
+ +       0.0923 * (normalized) nextword=ryadovoj
+ +       0.1563 * (normalized) nextword=zamechatelnyj
+ +      -0.055  * (normalized) nextword=splav
+ +      -0.1357 * (normalized) nextword=eshchyo
+ +       0.1222 * (normalized) nextword=ego
+ +       0.2001 * (normalized) nextword=zaklyuchat
+ +      -0.1732 * (normalized) nextword=pobuditelnyj
+ +      -0.0538 * (normalized) nextword=individ
+ +       0.2112 * (normalized) nextword=Tolstoj
+ +       0.2312 * (normalized) prevtag=pronoun
+ +      -0.6787 * (normalized) prevtag=prep
+ +       0.2838 * (normalized) prevtag=adj
+ +       0.1563 * (normalized) prevtag=.
+ +      -0.1544 * (normalized) prevtag=noun
+ +       0.1618 * (normalized) prevtag=conj
+ +      -0.0749 * (normalized) nexttag=pronoun
+ +       0.0469 * (normalized) nexttag=.
+ +      -0.1357 * (normalized) nexttag=adv
+ +       0.0345 * (normalized) nexttag=conj
+ +       0.1025 * (normalized) nexttag=noun
+ +      -0.0978 * (normalized) nexttag=adj
+ +       0.1246 * (normalized) nexttag=verb
+ +       0.63  
+
+Number of kernel evaluations: 731 (94.548% cached)
+
+Classifier for classes: 0, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.7527 * (normalized) ï»¿prevword=v
+ +       0.0904 * (normalized) ï»¿prevword=podvodnyj
+ +       0.0238 * (normalized) ï»¿prevword=.
+ +      -0.7559 * (normalized) ï»¿prevword=partiya
+ +       0.0915 * (normalized) ï»¿prevword=monetarizovannyj
+ +      -1.2123 * (normalized) ï»¿prevword=k
+ +       0.0922 * (normalized) ï»¿prevword=kulturnaya
+ +       0.2796 * (normalized) ï»¿prevword=dlya
+ +       0.1698 * (normalized) ï»¿prevword=o
+ +       0.0913 * (normalized) ï»¿prevword=stolichnyj
+ +       0.0911 * (normalized) ï»¿prevword=hristianskij
+ +       0.3656 * (normalized) ï»¿prevword=omolodit
+ +       1      * (normalized) ï»¿prevword=s
+ +       1      * (normalized) ï»¿prevword=uroven
+ +      -0.7571 * (normalized) ï»¿prevword=vremya
+ +       0.091  * (normalized) ï»¿prevword=hozyajstvennyj
+ +       0.0919 * (normalized) ï»¿prevword=duhovnyj
+ +      -0.3176 * (normalized) nextword=ne
+ +       0.0238 * (normalized) nextword=v
+ +      -0.3173 * (normalized) nextword=.
+ +      -0.2275 * (normalized) nextword=takoj
+ +       0.672  * (normalized) nextword=region
+ +      -0.3176 * (normalized) nextword=byt
+ +       0.6733 * (normalized) nextword=tserkov
+ +      -0.4481 * (normalized) nextword=poluzabytyj
+ +      -1      * (normalized) nextword=splav
+ +      -0.0879 * (normalized) nextword=eshchyo
+ +       1      * (normalized) nextword=veruyushchij
+ +       0.1698 * (normalized) nextword=hristianskij
+ +       0.2796 * (normalized) nextword=lyuboj
+ +       0.6732 * (normalized) nextword=naselenie
+ +      -0.4489 * (normalized) nextword=pobuditelnyj
+ +      -1      * (normalized) nextword=individ
+ +       0.6732 * (normalized) nextword=chelovek
+ +      -0.5157 * (normalized) prevtag=prep
+ +       0.6394 * (normalized) prevtag=adj
+ +       0.0238 * (normalized) prevtag=.
+ +      -0.513  * (normalized) prevtag=noun
+ +       0.3656 * (normalized) prevtag=verb
+ +      -0.3176 * (normalized) nexttag=neg
+ +       0.0521 * (normalized) nexttag=pronoun
+ +       0.0238 * (normalized) nexttag=prep
+ +      -0.3173 * (normalized) nexttag=.
+ +      -0.0879 * (normalized) nexttag=adv
+ +       0.6917 * (normalized) nexttag=noun
+ +       0.2728 * (normalized) nexttag=adj
+ +      -0.3176 * (normalized) nexttag=verb
+ +       0.904 
+
+Number of kernel evaluations: 569 (93.618% cached)
+
+Classifier for classes: 0, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.2766 * (normalized) ï»¿prevword=v
+ +       0.0617 * (normalized) ï»¿prevword=dachnyj
+ +       0.7236 * (normalized) ï»¿prevword=ot
+ +      -1      * (normalized) ï»¿prevword=partiya
+ +      -0.5311 * (normalized) ï»¿prevword=k
+ +       0.0038 * (normalized) ï»¿prevword=zhivoj
+ +       0.1435 * (normalized) ï»¿prevword=povsednevnyj
+ +       0.7239 * (normalized) ï»¿prevword=o
+ +       0.0025 * (normalized) ï»¿prevword=bojkij
+ +       0.1433 * (normalized) ï»¿prevword=realnyj
+ +       0.0037 * (normalized) ï»¿prevword=sovremennyj
+ +       0.1815 * (normalized) ï»¿prevword=yavlyatsya
+ +       0.1213 * (normalized) ï»¿prevword=sam
+ +       0.1211 * (normalized) ï»¿prevword=drugoj
+ +      -1      * (normalized) ï»¿prevword=vremya
+ +       0.7882 * (normalized) ï»¿prevword=kniga
+ +       0.7876 * (normalized) ï»¿prevword=uchebnik
+ +       0.0021 * (normalized) ï»¿prevword=segodnyashnij
+ +       0.0617 * (normalized) nextword=. 
+ +       0.1826 * (normalized) nextword=.
+ +       0.1435 * (normalized) nextword=i
+ +      -0.1592 * (normalized) nextword=takoj
+ +      -0.1063 * (normalized) nextword=poluzabytyj
+ +      -0.1593 * (normalized) nextword=eshchyo
+ +       0.1433 * (normalized) nextword=teoriya
+ +      -0.1062 * (normalized) nextword=pobuditelnyj
+ +       0.2424 * (normalized) prevtag=pronoun
+ +      -0.3601 * (normalized) prevtag=prep
+ +       0.3605 * (normalized) prevtag=adj
+ +      -0.4242 * (normalized) prevtag=noun
+ +       0.1815 * (normalized) prevtag=verb
+ +      -0.1592 * (normalized) nexttag=pronoun
+ +       0.2443 * (normalized) nexttag=.
+ +      -0.1593 * (normalized) nexttag=adv
+ +       0.1435 * (normalized) nexttag=conj
+ +       0.1433 * (normalized) nexttag=noun
+ +      -0.2125 * (normalized) nexttag=adj
+ +       0.0617 * (normalized) nastoyashchij=1
+ +       0.2096
+
+Number of kernel evaluations: 332 (92.348% cached)
+
+Classifier for classes: 0, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3483 * (normalized) ï»¿prevword=v
+ +      -0.0963 * (normalized) ï»¿prevword=partiya
+ +      -0.1264 * (normalized) ï»¿prevword=k
+ +       0.3341 * (normalized) ï»¿prevword=poutru
+ +       0.3342 * (normalized) ï»¿prevword=kulturnyj
+ +      -0.0974 * (normalized) ï»¿prevword=vremya
+ +      -0.1936 * (normalized) nextword=.
+ +      -0.0376 * (normalized) nextword=takoj
+ +      -0.0254 * (normalized) nextword=poluzabytyj
+ +      -0.1739 * (normalized) nextword=splav
+ +      -0.0381 * (normalized) nextword=eshchyo
+ +       0.3341 * (normalized) nextword=rajon
+ +       0.3342 * (normalized) nextword=Moskva
+ +      -0.0254 * (normalized) nextword=pobuditelnyj
+ +      -0.1744 * (normalized) nextword=individ
+ +      -0.4747 * (normalized) prevtag=prep
+ +       0.3342 * (normalized) prevtag=adj
+ +      -0.1936 * (normalized) prevtag=noun
+ +       0.3341 * (normalized) prevtag=adv
+ +      -0.0376 * (normalized) nexttag=pronoun
+ +      -0.1936 * (normalized) nexttag=.
+ +      -0.0381 * (normalized) nexttag=adv
+ +       0.32   * (normalized) nexttag=noun
+ +      -0.0507 * (normalized) nexttag=adj
+ -       0.3227
+
+Number of kernel evaluations: 83 (91.309% cached)
+
+Classifier for classes: 1, 2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0115 * (normalized) ï»¿prevword=nash
+ +       0.185  * (normalized) ï»¿prevword=svoj
+ +      -0.3623 * (normalized) ï»¿prevword=v
+ +       0.1147 * (normalized) ï»¿prevword=podvodnyj
+ +      -0.6271 * (normalized) ï»¿prevword=postoyannyj
+ +       0.1513 * (normalized) ï»¿prevword=.
+ +       0.1441 * (normalized) ï»¿prevword=telo
+ +       0.6606 * (normalized) ï»¿prevword=na
+ +       0.3394 * (normalized) ï»¿prevword=poskolku
+ +       0.1701 * (normalized) ï»¿prevword=nanesyonnyj
+ +       0.1438 * (normalized) ï»¿prevword=strahovanie
+ +       0.662  * (normalized) ï»¿prevword=k
+ +       0.2862 * (normalized) ï»¿prevword=god
+ +      -0.1423 * (normalized) ï»¿prevword=i
+ +       0.1431 * (normalized) ï»¿prevword=okonchanie
+ +      -0.5263 * (normalized) ï»¿prevword=dlya
+ +       0.1574 * (normalized) ï»¿prevword=uslovie
+ +      -1      * (normalized) ï»¿prevword=o
+ +       0.0123 * (normalized) ï»¿prevword=ego
+ +       0.0123 * (normalized) ï»¿prevword=on
+ +       0.1381 * (normalized) ï»¿prevword=posle
+ +       0.1012 * (normalized) ï»¿prevword=vechnyj
+ +      -0.7854 * (normalized) ï»¿prevword=pobeda
+ +       0.7259 * (normalized) ï»¿prevword=najti
+ +       0.3732 * (normalized) ï»¿prevword=chelovecheskij
+ +      -0.8981 * (normalized) ï»¿prevword=vozniknut
+ +       0.2023 * (normalized) ï»¿prevword=prodlevat
+ +      -0.3933 * (normalized) ï»¿prevword=chto
+ +      -0.8394 * (normalized) nextword=ne
+ +       0.2722 * (normalized) nextword=v
+ +       0.1952 * (normalized) nextword=.
+ +      -0.6271 * (normalized) nextword=nevozmozhno
+ +       0.1608 * (normalized) nextword=i
+ +       0.3394 * (normalized) nextword=chelovecheskij
+ +       0.1433 * (normalized) nextword=posle
+ +       0.8577 * (normalized) nextword=pri
+ +       0.1381 * (normalized) nextword=Hristos
+ +      -0.7854 * (normalized) nextword=nad
+ +      -0.2741 * (normalized) nextword=vechnyj
+ +       0.1089 * (normalized) nextword=on
+ +       0.1429 * (normalized) nextword=u
+ +       0.0762 * (normalized) nextword=svyashchennyj
+ +      -0.5263 * (normalized) nextword=na
+ +       0.6377 * (normalized) nextword=organizm
+ +       0.3732 * (normalized) nextword=ezhegodno
+ +      -0.3933 * (normalized) nextword=proniknut
+ +       0.2212 * (normalized) prevtag=pronoun
+ +      -0.4278 * (normalized) prevtag=prep
+ +       0.1321 * (normalized) prevtag=adj
+ +       0.1513 * (normalized) prevtag=.
+ +       0.0893 * (normalized) prevtag=noun
+ +      -0.1962 * (normalized) prevtag=conj
+ +       0.0302 * (normalized) prevtag=verb
+ +      -0.8394 * (normalized) nexttag=neg
+ +       0.1089 * (normalized) nexttag=pronoun
+ +       0.1045 * (normalized) nexttag=prep
+ +       0.1952 * (normalized) nexttag=.
+ +      -0.2539 * (normalized) nexttag=adv
+ +       0.1608 * (normalized) nexttag=conj
+ +       0.7758 * (normalized) nexttag=noun
+ +       0.1415 * (normalized) nexttag=adj
+ +      -0.3933 * (normalized) nexttag=verb
+ +      -0.8981 * (normalized) vozniknut=1
+ +       0.3763
+
+Number of kernel evaluations: 877 (95.276% cached)
+
+Classifier for classes: 1, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.5857 * (normalized) ï»¿prevword=v
+ +       0.3264 * (normalized) ï»¿prevword=nastoyashchij
+ +      -0.15   * (normalized) ï»¿prevword=postoyannyj
+ +      -0.3789 * (normalized) ï»¿prevword=.
+ +      -0.172  * (normalized) ï»¿prevword=i
+ +       0.586  * (normalized) ï»¿prevword=a
+ +       0.5123 * (normalized) ï»¿prevword=polnota
+ +       0.6207 * (normalized) ï»¿prevword=on
+ +      -0.1966 * (normalized) ï»¿prevword=pobeda
+ +      -0.3904 * (normalized) ï»¿prevword=vozniknut
+ +      -0.172  * (normalized) ï»¿prevword=chto
+ +       0.2418 * (normalized) nextword=ne
+ +       0.4487 * (normalized) nextword=.
+ +      -0.15   * (normalized) nextword=nevozmozhno
+ +      -0.1966 * (normalized) nextword=nad
+ +      -0.172  * (normalized) nextword=vechnyj
+ +      -0.172  * (normalized) nextword=proniknut
+ +       0.6207 * (normalized) prevtag=pronoun
+ +      -0.5857 * (normalized) prevtag=prep
+ +       0.1764 * (normalized) prevtag=adj
+ +      -0.3789 * (normalized) prevtag=.
+ +       0.3157 * (normalized) prevtag=noun
+ +       0.2421 * (normalized) prevtag=conj
+ +      -0.3904 * (normalized) prevtag=verb
+ +       0.2418 * (normalized) nexttag=neg
+ +      -0.1966 * (normalized) nexttag=prep
+ +       0.4487 * (normalized) nexttag=.
+ +      -0.15   * (normalized) nexttag=adv
+ +      -0.172  * (normalized) nexttag=adj
+ +      -0.172  * (normalized) nexttag=verb
+ +      -0.3904 * (normalized) vozniknut=1
+ +       0.3264 * (normalized) nastoyashchij=1
+ -       0.7258
+
+Number of kernel evaluations: 120 (90.323% cached)
+
+Classifier for classes: 1, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.3365 * (normalized) ï»¿prevword=nash
+ +       0.0965 * (normalized) ï»¿prevword=svoj
+ +       0.3073 * (normalized) ï»¿prevword=v
+ +       0      * (normalized) ï»¿prevword=ves
+ +      -0.6404 * (normalized) ï»¿prevword=postoyannyj
+ +      -0.2574 * (normalized) ï»¿prevword=.
+ +       0.1484 * (normalized) ï»¿prevword=moj
+ +       0.0762 * (normalized) ï»¿prevword=soznatelnyj
+ +       0.1557 * (normalized) ï»¿prevword=sluchaj
+ +       0.2163 * (normalized) ï»¿prevword=oblegchat
+ +      -0.2367 * (normalized) ï»¿prevword=i
+ +       0.0344 * (normalized) ï»¿prevword=samostoyatelnyj
+ +       0.2655 * (normalized) ï»¿prevword=dlya
+ +       0.0343 * (normalized) ï»¿prevword=professionalnyj
+ +       0.2175 * (normalized) ï»¿prevword=schitat
+ +       0.035  * (normalized) ï»¿prevword=ostavshijsya
+ +       0.2163 * (normalized) ï»¿prevword=ukrashat
+ +       0.4457 * (normalized) ï»¿prevword=radost
+ +      -1      * (normalized) ï»¿prevword=o
+ +       0.5201 * (normalized) ï»¿prevword=dolgij
+ +       0.2164 * (normalized) ï»¿prevword=prozhit
+ +       0.0333 * (normalized) ï»¿prevword=lichnyj
+ +       0.0481 * (normalized) ï»¿prevword=tolko
+ +       0.1535 * (normalized) ï»¿prevword=iz
+ +      -0.5542 * (normalized) ï»¿prevword=pobeda
+ +       0.3152 * (normalized) ï»¿prevword=smysl
+ +       0.1533 * (normalized) ï»¿prevword=pri
+ +      -0.8912 * (normalized) ï»¿prevword=vozniknut
+ +       0.033  * (normalized) ï»¿prevword=posleduyushchij
+ +      -0.5116 * (normalized) ï»¿prevword=chto
+ +       0.0329 * (normalized) ï»¿prevword=novyj
+ +       0.1535 * (normalized) nextword=ne
+ +       0.0772 * (normalized) nextword=ya
+ +       0.3365 * (normalized) nextword=v
+ +       0.1748 * (normalized) nextword=.
+ +      -0.6404 * (normalized) nextword=nevozmozhno
+ +      -0.0682 * (normalized) nextword=i
+ +       0.1557 * (normalized) nextword=uzhasno
+ +       0.0758 * (normalized) nextword=ona
+ +       0.0771 * (normalized) nextword=kotoryj
+ +       0.4457 * (normalized) nextword=posle
+ +       0.1739 * (normalized) nextword=nuzhno
+ +       0.1484 * (normalized) nextword=vsegda
+ +       0.7426 * (normalized) nextword=nachinat
+ +       0.0481 * (normalized) nextword=posvyatit
+ +       0.1535 * (normalized) nextword=podvizhnik
+ +      -0.5542 * (normalized) nextword=nad
+ +      -0.2367 * (normalized) nextword=vechnyj
+ +       0.1533 * (normalized) nextword=Pushkin
+ +      -0.94   * (normalized) nextword=na
+ +       0.035  * (normalized) nextword=prinimat
+ +      -0.5116 * (normalized) nextword=proniknut
+ +       0.5813 * (normalized) prevtag=pronoun
+ +      -0.0721 * (normalized) prevtag=prep
+ +       0.1588 * (normalized) prevtag=adj
+ +      -0.2574 * (normalized) prevtag=.
+ +       0.3624 * (normalized) prevtag=noun
+ +      -0.7483 * (normalized) prevtag=conj
+ +      -0.0248 * (normalized) prevtag=verb
+ +       0.1535 * (normalized) nexttag=neg
+ +       0.23   * (normalized) nexttag=pronoun
+ +      -0.712  * (normalized) nexttag=prep
+ +       0.1748 * (normalized) nexttag=.
+ +      -0.3363 * (normalized) nexttag=adv
+ +      -0.0682 * (normalized) nexttag=conj
+ +       0.3069 * (normalized) nexttag=noun
+ +      -0.2367 * (normalized) nexttag=adj
+ +       0.3141 * (normalized) nexttag=verb
+ +       0.1739 * (normalized) nexttag=pred
+ +      -0.8912 * (normalized) vozniknut=1
+ +       0.2038 * (normalized) ves=1
+ +       0.458 
+
+Number of kernel evaluations: 2084 (92.444% cached)
+
+Classifier for classes: 1, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.4681 * (normalized) ï»¿prevword=postoyannyj
+ +       0.088  * (normalized) ï»¿prevword=.
+ +       0.1842 * (normalized) ï»¿prevword=tvoj
+ +       0.4918 * (normalized) ï»¿prevword=na
+ +       0.4877 * (normalized) ï»¿prevword=kak
+ +       0.3836 * (normalized) ï»¿prevword=obraz
+ +       0.4207 * (normalized) ï»¿prevword=semejnaya
+ +      -0.4482 * (normalized) ï»¿prevword=i
+ +      -0.0506 * (normalized) ï»¿prevword=dlya
+ +       0.1408 * (normalized) ï»¿prevword=povsednevnyj
+ +      -0.7534 * (normalized) ï»¿prevword=o
+ +       0.2801 * (normalized) ï»¿prevword=opyt
+ +      -0.4263 * (normalized) ï»¿prevword=pobeda
+ +      -0.6068 * (normalized) ï»¿prevword=vozniknut
+ +       0.2026 * (normalized) ï»¿prevword=storona
+ +      -0.3467 * (normalized) ï»¿prevword=chto
+ +       0.4206 * (normalized) ï»¿prevword=kochevoj
+ +      -0.533  * (normalized) nextword=ne
+ +       0.3727 * (normalized) nextword=.
+ +      -0.4681 * (normalized) nextword=nevozmozhno
+ +       0.0879 * (normalized) nextword=i
+ +       0.1842 * (normalized) nextword=obyazatelno
+ +       0.021  * (normalized) nextword=CHubajs
+ +       0.1768 * (normalized) nextword=davat
+ +       0.0208 * (normalized) nextword=Ohlobystin
+ +       0.1408 * (normalized) nextword=ryadovoj
+ +       0.621  * (normalized) nextword=zamechatelnyj
+ +       0.0214 * (normalized) nextword=lyudi
+ +       0.1436 * (normalized) nextword=ego
+ +       0.2801 * (normalized) nextword=zaklyuchat
+ +      -0.4263 * (normalized) nextword=nad
+ +      -0.4482 * (normalized) nextword=vechnyj
+ +      -0.0506 * (normalized) nextword=na
+ +       0.2026 * (normalized) nextword=Tolstoj
+ +      -0.3467 * (normalized) nextword=proniknut
+ +       0.1842 * (normalized) prevtag=pronoun
+ +      -0.3122 * (normalized) prevtag=prep
+ +       0.514  * (normalized) prevtag=adj
+ +       0.088  * (normalized) prevtag=.
+ +       0.4399 * (normalized) prevtag=noun
+ +      -0.3072 * (normalized) prevtag=conj
+ +      -0.6068 * (normalized) prevtag=verb
+ +      -0.533  * (normalized) nexttag=neg
+ +       0.1436 * (normalized) nexttag=pronoun
+ +      -0.4769 * (normalized) nexttag=prep
+ +       0.5569 * (normalized) nexttag=.
+ +      -0.4681 * (normalized) nexttag=adv
+ +       0.0879 * (normalized) nexttag=conj
+ +       0.2658 * (normalized) nexttag=noun
+ +       0.3137 * (normalized) nexttag=adj
+ +       0.1102 * (normalized) nexttag=verb
+ +      -0.6068 * (normalized) vozniknut=1
+ -       0.11  
+
+Number of kernel evaluations: 586 (90.519% cached)
+
+Classifier for classes: 1, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.036  * (normalized) ï»¿prevword=v
+ +       0.1247 * (normalized) ï»¿prevword=podvodnyj
+ +      -0.5184 * (normalized) ï»¿prevword=postoyannyj
+ +       0.1367 * (normalized) ï»¿prevword=.
+ +       0.1253 * (normalized) ï»¿prevword=monetarizovannyj
+ +       0.1253 * (normalized) ï»¿prevword=kulturnaya
+ +       0.1369 * (normalized) ï»¿prevword=oblegchat
+ +      -0.5304 * (normalized) ï»¿prevword=i
+ +      -0.1583 * (normalized) ï»¿prevword=dlya
+ +       0.061  * (normalized) ï»¿prevword=uslozhnit
+ +      -0.361  * (normalized) ï»¿prevword=o
+ +       0.1251 * (normalized) ï»¿prevword=stolichnyj
+ +       0.1242 * (normalized) ï»¿prevword=hristianskij
+ +       0.5127 * (normalized) ï»¿prevword=omolodit
+ +      -0.5644 * (normalized) ï»¿prevword=pobeda
+ +       0.5176 * (normalized) ï»¿prevword=s
+ +       0.841  * (normalized) ï»¿prevword=uroven
+ +      -0.7434 * (normalized) ï»¿prevword=vozniknut
+ +       0.125  * (normalized) ï»¿prevword=hozyajstvennyj
+ +       0.1237 * (normalized) ï»¿prevword=duhovnyj
+ +      -0.1674 * (normalized) ï»¿prevword=chto
+ +      -0.7367 * (normalized) nextword=ne
+ +       0.8734 * (normalized) nextword=v
+ +       0.1603 * (normalized) nextword=.
+ +      -0.5184 * (normalized) nextword=nevozmozhno
+ +      -0.159  * (normalized) nextword=i
+ +       0.1632 * (normalized) nextword=region
+ +       0.1369 * (normalized) nextword=otechestvennyj
+ +       0.1623 * (normalized) nextword=tserkov
+ +       0.061  * (normalized) nextword=impotryor
+ +       0.314  * (normalized) nextword=veruyushchij
+ +      -0.5644 * (normalized) nextword=nad
+ +      -0.5304 * (normalized) nextword=vechnyj
+ +       0.639  * (normalized) nextword=hristianskij
+ +       0.498  * (normalized) nextword=lyuboj
+ +       0.1623 * (normalized) nextword=naselenie
+ +       0.1623 * (normalized) nextword=chelovek
+ +      -0.6563 * (normalized) nextword=na
+ +      -0.1674 * (normalized) nextword=proniknut
+ +      -0.0377 * (normalized) prevtag=prep
+ +       0.355  * (normalized) prevtag=adj
+ +       0.1367 * (normalized) prevtag=.
+ +       0.2766 * (normalized) prevtag=noun
+ +      -0.6978 * (normalized) prevtag=conj
+ +      -0.0328 * (normalized) prevtag=verb
+ +      -0.7367 * (normalized) nexttag=neg
+ +       0.498  * (normalized) nexttag=pronoun
+ +      -0.3472 * (normalized) nexttag=prep
+ +       0.1603 * (normalized) nexttag=.
+ +      -0.5184 * (normalized) nexttag=adv
+ +      -0.159  * (normalized) nexttag=conj
+ +       0.7111 * (normalized) nexttag=noun
+ +       0.5594 * (normalized) nexttag=adj
+ +      -0.1674 * (normalized) nexttag=verb
+ +      -0.7434 * (normalized) vozniknut=1
+ +       0.1999
+
+Number of kernel evaluations: 515 (95.454% cached)
+
+Classifier for classes: 1, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1      * (normalized) ï»¿prevword=v
+ +       0.0154 * (normalized) ï»¿prevword=dachnyj
+ +      -0.4132 * (normalized) ï»¿prevword=postoyannyj
+ +      -0.116  * (normalized) ï»¿prevword=.
+ +       0.3789 * (normalized) ï»¿prevword=ot
+ +      -0.0927 * (normalized) ï»¿prevword=i
+ +      -0.016  * (normalized) ï»¿prevword=dlya
+ +       0.9201 * (normalized) ï»¿prevword=povsednevnyj
+ +       0.3796 * (normalized) ï»¿prevword=o
+ +       0.2537 * (normalized) ï»¿prevword=realnyj
+ +       0.4491 * (normalized) ï»¿prevword=yavlyatsya
+ +       0.0409 * (normalized) ï»¿prevword=sam
+ +      -0.1585 * (normalized) ï»¿prevword=pobeda
+ +       0.0403 * (normalized) ï»¿prevword=drugoj
+ +      -0.7757 * (normalized) ï»¿prevword=vozniknut
+ +       0.0928 * (normalized) ï»¿prevword=kniga
+ +       0.094  * (normalized) ï»¿prevword=uchebnik
+ +      -0.0926 * (normalized) ï»¿prevword=chto
+ +      -0.116  * (normalized) nextword=ne
+ +       0.0154 * (normalized) nextword=. 
+ +       0.6998 * (normalized) nextword=.
+ +      -0.4132 * (normalized) nextword=nevozmozhno
+ +      -0.0799 * (normalized) nextword=i
+ +       0.2537 * (normalized) nextword=teoriya
+ +      -0.1585 * (normalized) nextword=nad
+ +      -0.0927 * (normalized) nextword=vechnyj
+ +      -0.016  * (normalized) nextword=na
+ +      -0.0926 * (normalized) nextword=proniknut
+ +       0.0812 * (normalized) prevtag=pronoun
+ +      -0.2576 * (normalized) prevtag=prep
+ +       0.776  * (normalized) prevtag=adj
+ +      -0.116  * (normalized) prevtag=.
+ +       0.0283 * (normalized) prevtag=noun
+ +      -0.1853 * (normalized) prevtag=conj
+ +      -0.3266 * (normalized) prevtag=verb
+ +      -0.116  * (normalized) nexttag=neg
+ +      -0.1745 * (normalized) nexttag=prep
+ +       0.7152 * (normalized) nexttag=.
+ +      -0.4132 * (normalized) nexttag=adv
+ +      -0.0799 * (normalized) nexttag=conj
+ +       0.2537 * (normalized) nexttag=noun
+ +      -0.0927 * (normalized) nexttag=adj
+ +      -0.0926 * (normalized) nexttag=verb
+ +      -0.7757 * (normalized) vozniknut=1
+ +       0.0154 * (normalized) nastoyashchij=1
+ -       0.5366
+
+Number of kernel evaluations: 268 (92.656% cached)
+
+Classifier for classes: 1, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0309 * (normalized) ï»¿prevword=v
+ +      -0.1831 * (normalized) ï»¿prevword=postoyannyj
+ +      -0.0885 * (normalized) ï»¿prevword=.
+ +      -0.071  * (normalized) ï»¿prevword=i
+ +      -0.0441 * (normalized) ï»¿prevword=dlya
+ +      -0.07   * (normalized) ï»¿prevword=o
+ +       0.3168 * (normalized) ï»¿prevword=poutru
+ +       0.3777 * (normalized) ï»¿prevword=kulturnyj
+ +      -0.0777 * (normalized) ï»¿prevword=pobeda
+ +      -0.0585 * (normalized) ï»¿prevword=vozniknut
+ +      -0.0708 * (normalized) ï»¿prevword=chto
+ +      -0.0885 * (normalized) nextword=ne
+ +      -0.0895 * (normalized) nextword=.
+ +      -0.1831 * (normalized) nextword=nevozmozhno
+ +      -0.07   * (normalized) nextword=i
+ +       0.3168 * (normalized) nextword=rajon
+ +       0.3777 * (normalized) nextword=Moskva
+ +      -0.0777 * (normalized) nextword=nad
+ +      -0.071  * (normalized) nextword=vechnyj
+ +      -0.0441 * (normalized) nextword=na
+ +      -0.0708 * (normalized) nextword=proniknut
+ +      -0.1449 * (normalized) prevtag=prep
+ +       0.1946 * (normalized) prevtag=adj
+ +      -0.0885 * (normalized) prevtag=.
+ +      -0.0777 * (normalized) prevtag=noun
+ +      -0.1418 * (normalized) prevtag=conj
+ +      -0.0585 * (normalized) prevtag=verb
+ +       0.3168 * (normalized) prevtag=adv
+ +      -0.0885 * (normalized) nexttag=neg
+ +      -0.1217 * (normalized) nexttag=prep
+ +      -0.0895 * (normalized) nexttag=.
+ +      -0.1831 * (normalized) nexttag=adv
+ +      -0.07   * (normalized) nexttag=conj
+ +       0.6945 * (normalized) nexttag=noun
+ +      -0.071  * (normalized) nexttag=adj
+ +      -0.0708 * (normalized) nexttag=verb
+ +      -0.0585 * (normalized) vozniknut=1
+ -       0.6453
+
+Number of kernel evaluations: 66 (90.393% cached)
+
+Classifier for classes: 2, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0652 * (normalized) ï»¿prevword=nash
+ +      -0.0691 * (normalized) ï»¿prevword=svoj
+ +      -0.0111 * (normalized) ï»¿prevword=v
+ +       0.8349 * (normalized) ï»¿prevword=nastoyashchij
+ +      -0.0912 * (normalized) ï»¿prevword=.
+ +      -0.4333 * (normalized) ï»¿prevword=telo
+ +      -0.088  * (normalized) ï»¿prevword=na
+ +      -0.2765 * (normalized) ï»¿prevword=poskolku
+ +      -0.1278 * (normalized) ï»¿prevword=nanesyonnyj
+ +      -0.4267 * (normalized) ï»¿prevword=strahovanie
+ +      -0.0876 * (normalized) ï»¿prevword=k
+ +      -0.0763 * (normalized) ï»¿prevword=god
+ +      -0.233  * (normalized) ï»¿prevword=i
+ +      -0.4346 * (normalized) ï»¿prevword=okonchanie
+ +       1      * (normalized) ï»¿prevword=a
+ +      -0.0573 * (normalized) ï»¿prevword=uslovie
+ +      -0.0578 * (normalized) ï»¿prevword=ego
+ +       1.5666 * (normalized) ï»¿prevword=polnota
+ +      -0.0384 * (normalized) ï»¿prevword=on
+ +      -0.0133 * (normalized) ï»¿prevword=posle
+ +      -0.3385 * (normalized) ï»¿prevword=vechnyj
+ +      -0.3286 * (normalized) ï»¿prevword=chelovecheskij
+ +      -0.1472 * (normalized) ï»¿prevword=prodlevat
+ +       0.9616 * (normalized) nextword=ne
+ +      -0.0573 * (normalized) nextword=v
+ +      -0.0259 * (normalized) nextword=.
+ +      -0.1278 * (normalized) nextword=i
+ +      -0.2765 * (normalized) nextword=chelovecheskij
+ +      -0.0414 * (normalized) nextword=posle
+ +      -0.233  * (normalized) nextword=pri
+ +      -0.0488 * (normalized) nextword=kosmonavt
+ +      -0.0133 * (normalized) nextword=Hristos
+ +      -0.0213 * (normalized) nextword=on
+ +      -0.0349 * (normalized) nextword=u
+ +      -0.0424 * (normalized) nextword=rastenie
+ +      -0.0111 * (normalized) nextword=organizm
+ +      -0.0278 * (normalized) nextword=ezhegodno
+ +      -0.2305 * (normalized) prevtag=pronoun
+ +      -0.2    * (normalized) prevtag=prep
+ +       0.04   * (normalized) prevtag=adj
+ +      -0.0912 * (normalized) prevtag=.
+ +       0.1385 * (normalized) prevtag=noun
+ +       0.4905 * (normalized) prevtag=conj
+ +      -0.1472 * (normalized) prevtag=verb
+ +       0.9616 * (normalized) nexttag=neg
+ +      -0.0213 * (normalized) nexttag=pronoun
+ +      -0.3666 * (normalized) nexttag=prep
+ +      -0.0259 * (normalized) nexttag=.
+ +      -0.0278 * (normalized) nexttag=adv
+ +      -0.1278 * (normalized) nexttag=conj
+ +      -0.1156 * (normalized) nexttag=noun
+ +      -0.2765 * (normalized) nexttag=adj
+ +       0.8349 * (normalized) nastoyashchij=1
+ -       0.6638
+
+Number of kernel evaluations: 800 (93.141% cached)
+
+Classifier for classes: 2, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.8644 * (normalized) ï»¿prevword=nash
+ +       0.0928 * (normalized) ï»¿prevword=svoj
+ +       0.8985 * (normalized) ï»¿prevword=v
+ +      -0.6185 * (normalized) ï»¿prevword=podvodnyj
+ +       0.5188 * (normalized) ï»¿prevword=ves
+ +      -0.4614 * (normalized) ï»¿prevword=.
+ +       0.529  * (normalized) ï»¿prevword=moj
+ +       0.2347 * (normalized) ï»¿prevword=soznatelnyj
+ +      -1      * (normalized) ï»¿prevword=telo
+ +      -1      * (normalized) ï»¿prevword=na
+ +      -0.278  * (normalized) ï»¿prevword=poskolku
+ +       0.2674 * (normalized) ï»¿prevword=protyazhenie
+ +      -1      * (normalized) ï»¿prevword=nanesyonnyj
+ +       0.1499 * (normalized) ï»¿prevword=sputnik
+ +      -1      * (normalized) ï»¿prevword=strahovanie
+ +      -1.1016 * (normalized) ï»¿prevword=k
+ +      -1.0115 * (normalized) ï»¿prevword=god
+ +       0.4611 * (normalized) ï»¿prevword=oblegchat
+ +      -0.15   * (normalized) ï»¿prevword=i
+ +       0.6587 * (normalized) ï»¿prevword=samostoyatelnyj
+ +      -1      * (normalized) ï»¿prevword=okonchanie
+ +       0.8988 * (normalized) ï»¿prevword=dlya
+ +       0.6581 * (normalized) ï»¿prevword=professionalnyj
+ +       0.575  * (normalized) ï»¿prevword=stil
+ +       0.4613 * (normalized) ï»¿prevword=schitat
+ +      -0.7021 * (normalized) ï»¿prevword=uslovie
+ +       0.4607 * (normalized) ï»¿prevword=ukrashat
+ +       0.9884 * (normalized) ï»¿prevword=radost
+ +       0.8654 * (normalized) ï»¿prevword=dolgij
+ +       0.574  * (normalized) ï»¿prevword=Vinin
+ +       0.4617 * (normalized) ï»¿prevword=prozhit
+ +      -1      * (normalized) ï»¿prevword=ego
+ +       0.6592 * (normalized) ï»¿prevword=lichnyj
+ +       0.4249 * (normalized) ï»¿prevword=iz
+ +      -1      * (normalized) ï»¿prevword=on
+ +      -0.5751 * (normalized) ï»¿prevword=posle
+ +      -1.3414 * (normalized) ï»¿prevword=vechnyj
+ +      -0.4364 * (normalized) ï»¿prevword=najti
+ +       0.7814 * (normalized) ï»¿prevword=smysl
+ +       0.4247 * (normalized) ï»¿prevword=pri
+ +      -1.2222 * (normalized) ï»¿prevword=chelovecheskij
+ +       0.5736 * (normalized) ï»¿prevword=period
+ +       0.2623 * (normalized) ï»¿prevword=ehpoha
+ +      -1      * (normalized) ï»¿prevword=prodlevat
+ +       0.2627 * (normalized) ï»¿prevword=srok
+ +       0.6587 * (normalized) ï»¿prevword=posleduyushchij
+ +       0.6581 * (normalized) ï»¿prevword=novyj
+ +       0.5738 * (normalized) ï»¿prevword=poehtizatsiya
+ +       0.3397 * (normalized) nextword=ne
+ +       0.3846 * (normalized) nextword=ya
+ +      -0.3207 * (normalized) nextword=v
+ +      -0.0455 * (normalized) nextword=.
+ +      -0.1494 * (normalized) nextword=i
+ +       0.296  * (normalized) nextword=takoj
+ +       0.7227 * (normalized) nextword=stihotvorenie
+ +       0.2408 * (normalized) nextword=chelovecheskij
+ +       0.2674 * (normalized) nextword=mnogie
+ +      -0.0116 * (normalized) nextword=posle
+ +      -0.15   * (normalized) nextword=pri
+ +      -0.2578 * (normalized) nextword=kosmonavt
+ +       0.3397 * (normalized) nextword=mozhno
+ +       0.233  * (normalized) nextword=vsegda
+ +       0.8502 * (normalized) nextword=nachinat
+ +       0.4249 * (normalized) nextword=podvizhnik
+ +      -0.5751 * (normalized) nextword=Hristos
+ +      -0.4364 * (normalized) nextword=vechnyj
+ +      -1      * (normalized) nextword=on
+ +      -0.0491 * (normalized) nextword=bozhestvo
+ +       0.4247 * (normalized) nextword=Pushkin
+ +      -0.0115 * (normalized) nextword=u
+ +      -0.2576 * (normalized) nextword=rastenie
+ +      -0.5619 * (normalized) nextword=svyashchennyj
+ +       0.2623 * (normalized) nextword=Ishvarakrishna
+ +      -1      * (normalized) nextword=organizm
+ +      -0.2222 * (normalized) nextword=ezhegodno
+ +       0.2627 * (normalized) nextword=obychnyj
+ +       0.0051 * (normalized) prevtag=pronoun
+ +      -0.0297 * (normalized) prevtag=prep
+ +       0.2108 * (normalized) prevtag=adj
+ +      -0.4614 * (normalized) prevtag=.
+ +       0.295  * (normalized) prevtag=noun
+ +      -0.428  * (normalized) prevtag=conj
+ +       0.4083 * (normalized) prevtag=verb
+ +       0.3397 * (normalized) nexttag=neg
+ +      -0.052  * (normalized) nexttag=pronoun
+ +      -0.4938 * (normalized) nexttag=prep
+ +      -0.0455 * (normalized) nexttag=.
+ +       0.0108 * (normalized) nexttag=adv
+ +      -0.1494 * (normalized) nexttag=conj
+ +      -0.0422 * (normalized) nexttag=noun
+ +      -0.7575 * (normalized) nexttag=adj
+ +       0.8502 * (normalized) nexttag=verb
+ +       0.3397 * (normalized) nexttag=pred
+ +       0.7715 * (normalized) ves=1
+ +       0.2219
+
+Number of kernel evaluations: 4363 (94.818% cached)
+
+Classifier for classes: 2, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3494 * (normalized) ï»¿prevword=svoj
+ +       0.3488 * (normalized) ï»¿prevword=v
+ +      -0.3139 * (normalized) ï»¿prevword=podvodnyj
+ +      -0.2122 * (normalized) ï»¿prevword=.
+ +      -1      * (normalized) ï»¿prevword=telo
+ +       0.6749 * (normalized) ï»¿prevword=tvoj
+ +      -0.5883 * (normalized) ï»¿prevword=poskolku
+ +       0.9967 * (normalized) ï»¿prevword=kak
+ +      -1      * (normalized) ï»¿prevword=nanesyonnyj
+ +       0.9136 * (normalized) ï»¿prevword=obraz
+ +       0.9087 * (normalized) ï»¿prevword=semejnaya
+ +      -1      * (normalized) ï»¿prevword=strahovanie
+ +       0.9131 * (normalized) ï»¿prevword=proyavlenie
+ +      -0.4594 * (normalized) ï»¿prevword=k
+ +       0.6107 * (normalized) ï»¿prevword=dovolnyj
+ +      -0.225  * (normalized) ï»¿prevword=god
+ +      -0.1268 * (normalized) ï»¿prevword=i
+ +      -1      * (normalized) ï»¿prevword=okonchanie
+ +      -0.012  * (normalized) ï»¿prevword=uslovie
+ +       0.6099 * (normalized) ï»¿prevword=mestnaya
+ +       0.2187 * (normalized) ï»¿prevword=povsednevnyj
+ +       0.9129 * (normalized) ï»¿prevword=norma
+ +      -0.3493 * (normalized) ï»¿prevword=ego
+ +      -0.3489 * (normalized) ï»¿prevword=on
+ +      -0.1517 * (normalized) ï»¿prevword=posle
+ +      -1.3901 * (normalized) ï»¿prevword=vechnyj
+ +       0.3282 * (normalized) ï»¿prevword=opyt
+ +      -0.2135 * (normalized) ï»¿prevword=najti
+ +      -1.1059 * (normalized) ï»¿prevword=chelovecheskij
+ +      -0.2543 * (normalized) ï»¿prevword=prodlevat
+ +       0.5347 * (normalized) ï»¿prevword=storona
+ +       0.6102 * (normalized) ï»¿prevword=ehmotsionalnyj
+ +       0.6105 * (normalized) ï»¿prevword=nyneshnij
+ +       0.9089 * (normalized) ï»¿prevword=kochevoj
+ +      -0.3259 * (normalized) nextword=v
+ +      -0.3016 * (normalized) nextword=.
+ +      -0.1133 * (normalized) nextword=i
+ +       0.6749 * (normalized) nextword=obyazatelno
+ +      -0.5883 * (normalized) nextword=chelovecheskij
+ +      -0.113  * (normalized) nextword=posle
+ +      -0.1268 * (normalized) nextword=pri
+ +      -0.1405 * (normalized) nextword=kosmonavt
+ +       0.1549 * (normalized) nextword=CHubajs
+ +       0.1549 * (normalized) nextword=Ohlobystin
+ +       0.2187 * (normalized) nextword=ryadovoj
+ +       1      * (normalized) nextword=zamechatelnyj
+ +       0.155  * (normalized) nextword=lyudi
+ +       0.0355 * (normalized) nextword=ego
+ +      -0.1517 * (normalized) nextword=Hristos
+ +       0.3282 * (normalized) nextword=zaklyuchat
+ +      -0.2135 * (normalized) nextword=vechnyj
+ +      -0.112  * (normalized) nextword=u
+ +      -0.1408 * (normalized) nextword=rastenie
+ +      -0.1724 * (normalized) nextword=svyashchennyj
+ +      -0.6512 * (normalized) nextword=organizm
+ +      -0.1059 * (normalized) nextword=ezhegodno
+ +       0.5347 * (normalized) nextword=Tolstoj
+ +      -0.3726 * (normalized) prevtag=pronoun
+ +      -0.2622 * (normalized) prevtag=prep
+ +       0.6677 * (normalized) prevtag=adj
+ +      -0.2122 * (normalized) prevtag=.
+ +       0.3654 * (normalized) prevtag=noun
+ +       0.2817 * (normalized) prevtag=conj
+ +      -0.4678 * (normalized) prevtag=verb
+ +       0.0355 * (normalized) nexttag=pronoun
+ +      -0.6777 * (normalized) nexttag=prep
+ +       0.3733 * (normalized) nexttag=.
+ +      -0.1059 * (normalized) nexttag=adv
+ +      -0.1133 * (normalized) nexttag=conj
+ +      -0.0846 * (normalized) nexttag=noun
+ +       0.2445 * (normalized) nexttag=adj
+ +       0.3282 * (normalized) nexttag=verb
+ -       0.35  
+
+Number of kernel evaluations: 1688 (95.293% cached)
+
+Classifier for classes: 2, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1264 * (normalized) ï»¿prevword=nash
+ +      -0.2082 * (normalized) ï»¿prevword=svoj
+ +       0.6902 * (normalized) ï»¿prevword=v
+ +      -0.0079 * (normalized) ï»¿prevword=.
+ +      -0.4248 * (normalized) ï»¿prevword=telo
+ +      -0.9375 * (normalized) ï»¿prevword=na
+ +      -0.2545 * (normalized) ï»¿prevword=poskolku
+ +      -0.7284 * (normalized) ï»¿prevword=nanesyonnyj
+ +       0.57   * (normalized) ï»¿prevword=monetarizovannyj
+ +      -0.4243 * (normalized) ï»¿prevword=strahovanie
+ +      -0.9368 * (normalized) ï»¿prevword=k
+ +      -0.173  * (normalized) ï»¿prevword=god
+ +       0.5704 * (normalized) ï»¿prevword=kulturnaya
+ +       0.4173 * (normalized) ï»¿prevword=oblegchat
+ +      -0.0985 * (normalized) ï»¿prevword=i
+ +      -0.4255 * (normalized) ï»¿prevword=okonchanie
+ +       0.4197 * (normalized) ï»¿prevword=dlya
+ +       0.4872 * (normalized) ï»¿prevword=uslozhnit
+ +      -0.4185 * (normalized) ï»¿prevword=uslovie
+ +       0.4583 * (normalized) ï»¿prevword=o
+ +      -0.1265 * (normalized) ï»¿prevword=ego
+ +       0.5701 * (normalized) ï»¿prevword=stolichnyj
+ +       0.5772 * (normalized) ï»¿prevword=kulturnyj
+ +      -0.1271 * (normalized) ï»¿prevword=on
+ +      -0.472  * (normalized) ï»¿prevword=posle
+ +      -1.4292 * (normalized) ï»¿prevword=vechnyj
+ +       0.5699 * (normalized) ï»¿prevword=hristianskij
+ +       0.9816 * (normalized) ï»¿prevword=omolodit
+ +      -0.5827 * (normalized) ï»¿prevword=najti
+ +       1      * (normalized) ï»¿prevword=s
+ +      -1.1256 * (normalized) ï»¿prevword=chelovecheskij
+ +       1.5755 * (normalized) ï»¿prevword=uroven
+ +      -1      * (normalized) ï»¿prevword=prodlevat
+ +       0.5699 * (normalized) ï»¿prevword=hozyajstvennyj
+ +       0.5703 * (normalized) ï»¿prevword=duhovnyj
+ +       0.1587 * (normalized) nextword=v
+ +       0.0265 * (normalized) nextword=.
+ +      -0.3238 * (normalized) nextword=i
+ +      -0.2545 * (normalized) nextword=chelovecheskij
+ +      -0.0871 * (normalized) nextword=posle
+ +      -0.0985 * (normalized) nextword=pri
+ +      -0.7063 * (normalized) nextword=kosmonavt
+ +       0.3665 * (normalized) nextword=region
+ +       0.4173 * (normalized) nextword=otechestvennyj
+ +       0.3655 * (normalized) nextword=tserkov
+ +       0.4872 * (normalized) nextword=impotryor
+ +      -0.472  * (normalized) nextword=Hristos
+ +       0.2265 * (normalized) nextword=veruyushchij
+ +      -0.5827 * (normalized) nextword=vechnyj
+ +       0.4583 * (normalized) nextword=hristianskij
+ +      -0.1428 * (normalized) nextword=on
+ +       0.4197 * (normalized) nextword=lyuboj
+ +      -0.0071 * (normalized) nextword=bozhestvo
+ +       0.3661 * (normalized) nextword=naselenie
+ +      -0.0859 * (normalized) nextword=u
+ +       0.3656 * (normalized) nextword=chelovek
+ +      -0.7061 * (normalized) nextword=rastenie
+ +      -0.0654 * (normalized) nextword=svyashchennyj
+ +      -1      * (normalized) nextword=organizm
+ +      -0.1256 * (normalized) nextword=ezhegodno
+ +       1      * (normalized) nextword=obitatel
+ +      -0.5883 * (normalized) prevtag=pronoun
+ +       0.2218 * (normalized) prevtag=prep
+ +       0.7146 * (normalized) prevtag=adj
+ +      -0.0079 * (normalized) prevtag=.
+ +      -0.2905 * (normalized) prevtag=noun
+ +      -0.353  * (normalized) prevtag=conj
+ +       0.3033 * (normalized) prevtag=verb
+ +       0.2769 * (normalized) nexttag=pronoun
+ +      -0.1127 * (normalized) nexttag=prep
+ +       0.0265 * (normalized) nexttag=.
+ +      -0.1256 * (normalized) nexttag=adv
+ +      -0.3238 * (normalized) nexttag=conj
+ +       0.0594 * (normalized) nexttag=noun
+ +       0.1994 * (normalized) nexttag=adj
+ -       0.3376
+
+Number of kernel evaluations: 1632 (95.746% cached)
+
+Classifier for classes: 2, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.5674 * (normalized) ï»¿prevword=nash
+ +      -0.5675 * (normalized) ï»¿prevword=svoj
+ +      -0.1981 * (normalized) ï»¿prevword=v
+ +      -0.2944 * (normalized) ï»¿prevword=podvodnyj
+ +       0.2449 * (normalized) ï»¿prevword=dachnyj
+ +      -0.1673 * (normalized) ï»¿prevword=.
+ +      -0.7095 * (normalized) ï»¿prevword=telo
+ +      -0.8604 * (normalized) ï»¿prevword=na
+ +       1      * (normalized) ï»¿prevword=ot
+ +      -0.0548 * (normalized) ï»¿prevword=poskolku
+ +      -0.902  * (normalized) ï»¿prevword=nanesyonnyj
+ +      -0.7089 * (normalized) ï»¿prevword=strahovanie
+ +      -0.8605 * (normalized) ï»¿prevword=k
+ +       0      * (normalized) ï»¿prevword=god
+ +      -0.7097 * (normalized) ï»¿prevword=okonchanie
+ +       0.5977 * (normalized) ï»¿prevword=zhivoj
+ +       1      * (normalized) ï»¿prevword=povsednevnyj
+ +       1.1396 * (normalized) ï»¿prevword=o
+ +       0.5977 * (normalized) ï»¿prevword=bojkij
+ +      -0.5677 * (normalized) ï»¿prevword=ego
+ +       0.5302 * (normalized) ï»¿prevword=realnyj
+ +       0.5974 * (normalized) ï»¿prevword=sovremennyj
+ +       1      * (normalized) ï»¿prevword=yavlyatsya
+ +       1      * (normalized) ï»¿prevword=sam
+ +      -0.5674 * (normalized) ï»¿prevword=on
+ +      -0.1981 * (normalized) ï»¿prevword=posle
+ +      -1.4028 * (normalized) ï»¿prevword=vechnyj
+ +      -0.0981 * (normalized) ï»¿prevword=najti
+ +      -1      * (normalized) ï»¿prevword=chelovecheskij
+ +       1      * (normalized) ï»¿prevword=drugoj
+ +      -0.8697 * (normalized) ï»¿prevword=prodlevat
+ +       1      * (normalized) ï»¿prevword=kniga
+ +       1      * (normalized) ï»¿prevword=uchebnik
+ +       0.5967 * (normalized) ï»¿prevword=segodnyashnij
+ +      -0.2944 * (normalized) nextword=v
+ +       0.2449 * (normalized) nextword=. 
+ +       0.1376 * (normalized) nextword=.
+ +       0.0089 * (normalized) nextword=i
+ +      -0.0548 * (normalized) nextword=chelovecheskij
+ +      -0.0389 * (normalized) nextword=kosmonavt
+ +       0.5302 * (normalized) nextword=teoriya
+ +      -0.1981 * (normalized) nextword=Hristos
+ +      -0.0981 * (normalized) nextword=vechnyj
+ +      -0.0393 * (normalized) nextword=rastenie
+ +      -0.1981 * (normalized) nextword=organizm
+ +      -0.2701 * (normalized) prevtag=pronoun
+ +       0.0226 * (normalized) prevtag=prep
+ +       0.5655 * (normalized) prevtag=adj
+ +      -0.1673 * (normalized) prevtag=.
+ +      -0.1281 * (normalized) prevtag=noun
+ +      -0.0548 * (normalized) prevtag=conj
+ +       0.0322 * (normalized) prevtag=verb
+ +      -0.2944 * (normalized) nexttag=prep
+ +       0.3826 * (normalized) nexttag=.
+ +       0.0089 * (normalized) nexttag=conj
+ +       0.0559 * (normalized) nexttag=noun
+ +      -0.1529 * (normalized) nexttag=adj
+ +       0.2449 * (normalized) nastoyashchij=1
+ -       0.6824
+
+Number of kernel evaluations: 977 (93.99% cached)
+
+Classifier for classes: 2, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0297 * (normalized) ï»¿prevword=svoj
+ +      -0.1183 * (normalized) ï»¿prevword=v
+ +      -0.1016 * (normalized) ï»¿prevword=podvodnyj
+ +      -0.2371 * (normalized) ï»¿prevword=.
+ +      -0.0213 * (normalized) ï»¿prevword=poskolku
+ +      -0.1023 * (normalized) ï»¿prevword=nanesyonnyj
+ +      -0.1181 * (normalized) ï»¿prevword=k
+ +      -0.0022 * (normalized) ï»¿prevword=god
+ +       0.4695 * (normalized) ï»¿prevword=poutru
+ +       0.6053 * (normalized) ï»¿prevword=kulturnyj
+ +      -0.1187 * (normalized) ï»¿prevword=posle
+ +      -0.1023 * (normalized) ï»¿prevword=vechnyj
+ +      -0.0211 * (normalized) ï»¿prevword=najti
+ +      -0.1022 * (normalized) ï»¿prevword=chelovecheskij
+ +      -0.1016 * (normalized) nextword=v
+ +      -0.1023 * (normalized) nextword=.
+ +      -0.1023 * (normalized) nextword=i
+ +      -0.0213 * (normalized) nextword=chelovecheskij
+ +      -0.0006 * (normalized) nextword=posle
+ +      -0.1184 * (normalized) nextword=kosmonavt
+ +       0.4695 * (normalized) nextword=rajon
+ +       0.6053 * (normalized) nextword=Moskva
+ +      -0.1187 * (normalized) nextword=Hristos
+ +      -0.0211 * (normalized) nextword=vechnyj
+ +      -0.0255 * (normalized) nextword=on
+ +      -0.1181 * (normalized) nextword=bozhestvo
+ +      -0.0016 * (normalized) nextword=u
+ +      -0.1186 * (normalized) nextword=rastenie
+ +      -0.0041 * (normalized) nextword=svyashchennyj
+ +      -0.1183 * (normalized) nextword=organizm
+ +      -0.1022 * (normalized) nextword=ezhegodno
+ +      -0.0297 * (normalized) prevtag=pronoun
+ +      -0.3551 * (normalized) prevtag=prep
+ +       0.1969 * (normalized) prevtag=adj
+ +      -0.2371 * (normalized) prevtag=.
+ +      -0.0022 * (normalized) prevtag=noun
+ +      -0.0213 * (normalized) prevtag=conj
+ +      -0.0211 * (normalized) prevtag=verb
+ +       0.4695 * (normalized) prevtag=adv
+ +      -0.0255 * (normalized) nexttag=pronoun
+ +      -0.1038 * (normalized) nexttag=prep
+ +      -0.1023 * (normalized) nexttag=.
+ +      -0.1022 * (normalized) nexttag=adv
+ +      -0.1023 * (normalized) nexttag=conj
+ +       0.4827 * (normalized) nexttag=noun
+ +      -0.0465 * (normalized) nexttag=adj
+ -       0.8904
+
+Number of kernel evaluations: 452 (85.32% cached)
+
+Classifier for classes: 3, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.3685 * (normalized) ï»¿prevword=nash
+ +       0.3683 * (normalized) ï»¿prevword=svoj
+ +       0.1312 * (normalized) ï»¿prevword=v
+ +       0.1216 * (normalized) ï»¿prevword=ves
+ +      -0.893  * (normalized) ï»¿prevword=nastoyashchij
+ +       0.0236 * (normalized) ï»¿prevword=.
+ +       0.0424 * (normalized) ï»¿prevword=moj
+ +       0.0243 * (normalized) ï»¿prevword=protyazhenie
+ +       0.0246 * (normalized) ï»¿prevword=sputnik
+ +       0.0767 * (normalized) ï»¿prevword=oblegchat
+ +       0.2136 * (normalized) ï»¿prevword=samostoyatelnyj
+ +       0.1275 * (normalized) ï»¿prevword=dlya
+ +       0.2124 * (normalized) ï»¿prevword=professionalnyj
+ +       0.3661 * (normalized) ï»¿prevword=stil
+ +       0.0766 * (normalized) ï»¿prevword=schitat
+ +      -0.807  * (normalized) ï»¿prevword=a
+ +       0.0775 * (normalized) ï»¿prevword=ukrashat
+ +       0.0351 * (normalized) ï»¿prevword=radost
+ +       0.3647 * (normalized) ï»¿prevword=Vinin
+ +       0.0781 * (normalized) ï»¿prevword=prozhit
+ +       0.1211 * (normalized) ï»¿prevword=ego
+ +      -1.6354 * (normalized) ï»¿prevword=polnota
+ +       0.2135 * (normalized) ï»¿prevword=lichnyj
+ +      -1      * (normalized) ï»¿prevword=on
+ +       0.0348 * (normalized) ï»¿prevword=smysl
+ +       0.3649 * (normalized) ï»¿prevword=period
+ +       0.0263 * (normalized) ï»¿prevword=ehpoha
+ +       0.0253 * (normalized) ï»¿prevword=minuta
+ +       0.026  * (normalized) ï»¿prevword=srok
+ +       0.2131 * (normalized) ï»¿prevword=posleduyushchij
+ +       0.2134 * (normalized) ï»¿prevword=novyj
+ +       0.3643 * (normalized) ï»¿prevword=poehtizatsiya
+ +      -0.132  * (normalized) nextword=ne
+ +       0.0246 * (normalized) nextword=ya
+ +      -0.1304 * (normalized) nextword=.
+ +       0.0348 * (normalized) nextword=i
+ +       0.0063 * (normalized) nextword=takoj
+ +       0.0243 * (normalized) nextword=mnogie
+ +       0.0351 * (normalized) nextword=posle
+ +       0.0304 * (normalized) nextword=vsegda
+ +       0.0236 * (normalized) nextword=nachinat
+ +       0.0057 * (normalized) nextword=vojti
+ +       0.0263 * (normalized) nextword=Ishvarakrishna
+ +       0.0253 * (normalized) nextword=kazatsya
+ +       0.026  * (normalized) nextword=obychnyj
+ +       0.0219 * (normalized) prevtag=pronoun
+ +       0.2587 * (normalized) prevtag=prep
+ +       0.1729 * (normalized) prevtag=adj
+ +       0.0236 * (normalized) prevtag=.
+ +       0.021  * (normalized) prevtag=noun
+ +      -0.807  * (normalized) prevtag=conj
+ +       0.3089 * (normalized) prevtag=verb
+ +      -0.132  * (normalized) nexttag=neg
+ +       0.0552 * (normalized) nexttag=pronoun
+ +       0.0351 * (normalized) nexttag=prep
+ +      -0.1304 * (normalized) nexttag=.
+ +       0.0304 * (normalized) nexttag=adv
+ +       0.0348 * (normalized) nexttag=conj
+ +       0.0523 * (normalized) nexttag=noun
+ +       0.0546 * (normalized) nexttag=verb
+ +      -0.893  * (normalized) nastoyashchij=1
+ +       0.2427 * (normalized) ves=1
+ +       0.8746
+
+Number of kernel evaluations: 1930 (93.337% cached)
+
+Classifier for classes: 3, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2596 * (normalized) ï»¿prevword=nash
+ +       0.1054 * (normalized) ï»¿prevword=v
+ +      -0.8942 * (normalized) ï»¿prevword=nastoyashchij
+ +       0.07   * (normalized) ï»¿prevword=.
+ +       0.1076 * (normalized) ï»¿prevword=tvoj
+ +       0.1039 * (normalized) ï»¿prevword=na
+ +       0.657  * (normalized) ï»¿prevword=kak
+ +       0.4059 * (normalized) ï»¿prevword=obraz
+ +       0.0464 * (normalized) ï»¿prevword=semejnaya
+ +       0.4064 * (normalized) ï»¿prevword=proyavlenie
+ +       0.2124 * (normalized) ï»¿prevword=dovolnyj
+ +      -1      * (normalized) ï»¿prevword=a
+ +       0.2115 * (normalized) ï»¿prevword=mestnaya
+ +       0.0539 * (normalized) ï»¿prevword=povsednevnyj
+ +       0.4064 * (normalized) ï»¿prevword=norma
+ +       0.2605 * (normalized) ï»¿prevword=ego
+ +      -1.594  * (normalized) ï»¿prevword=polnota
+ +      -0.5735 * (normalized) ï»¿prevword=on
+ +       0.1416 * (normalized) ï»¿prevword=opyt
+ +       0.1416 * (normalized) ï»¿prevword=storona
+ +       0.2125 * (normalized) ï»¿prevword=ehmotsionalnyj
+ +       0.2127 * (normalized) ï»¿prevword=nyneshnij
+ +       0.0464 * (normalized) ï»¿prevword=kochevoj
+ +      -0.5735 * (normalized) nextword=ne
+ +      -0.0439 * (normalized) nextword=.
+ +       0.0927 * (normalized) nextword=i
+ +       0.1076 * (normalized) nextword=obyazatelno
+ +       0.0539 * (normalized) nextword=ryadovoj
+ +       0.07   * (normalized) nextword=zamechatelnyj
+ +       0.0099 * (normalized) nextword=ego
+ +       0.1416 * (normalized) nextword=zaklyuchat
+ +       0.1416 * (normalized) nextword=Tolstoj
+ +       0.0542 * (normalized) prevtag=pronoun
+ +       0.2093 * (normalized) prevtag=prep
+ +       0.1015 * (normalized) prevtag=adj
+ +       0.07   * (normalized) prevtag=.
+ +      -0.092  * (normalized) prevtag=noun
+ +      -0.343  * (normalized) prevtag=conj
+ +      -0.5735 * (normalized) nexttag=neg
+ +       0.0099 * (normalized) nexttag=pronoun
+ +       0.0637 * (normalized) nexttag=.
+ +       0.0927 * (normalized) nexttag=conj
+ +       0.1416 * (normalized) nexttag=noun
+ +       0.1239 * (normalized) nexttag=adj
+ +       0.1416 * (normalized) nexttag=verb
+ +      -0.8942 * (normalized) nastoyashchij=1
+ +       0.6664
+
+Number of kernel evaluations: 464 (93.262% cached)
+
+Classifier for classes: 3, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.043  * (normalized) ï»¿prevword=v
+ +       0.1894 * (normalized) ï»¿prevword=podvodnyj
+ +      -0.9051 * (normalized) ï»¿prevword=nastoyashchij
+ +       0.174  * (normalized) ï»¿prevword=.
+ +       0.1897 * (normalized) ï»¿prevword=monetarizovannyj
+ +       0.1892 * (normalized) ï»¿prevword=kulturnaya
+ +       0.0474 * (normalized) ï»¿prevword=oblegchat
+ +       0.0583 * (normalized) ï»¿prevword=dlya
+ +       0.0371 * (normalized) ï»¿prevword=uslozhnit
+ +      -0.6944 * (normalized) ï»¿prevword=a
+ +       0.0339 * (normalized) ï»¿prevword=o
+ +      -1.1298 * (normalized) ï»¿prevword=polnota
+ +       0.1898 * (normalized) ï»¿prevword=stolichnyj
+ +      -0.3627 * (normalized) ï»¿prevword=on
+ +       0.1889 * (normalized) ï»¿prevword=hristianskij
+ +       0.2632 * (normalized) ï»¿prevword=omolodit
+ +       0.2383 * (normalized) ï»¿prevword=s
+ +       0.8704 * (normalized) ï»¿prevword=uroven
+ +       0.1903 * (normalized) ï»¿prevword=hozyajstvennyj
+ +       0.189  * (normalized) ï»¿prevword=duhovnyj
+ +      -0.3627 * (normalized) nextword=ne
+ +       0.1008 * (normalized) nextword=v
+ +      -0.031  * (normalized) nextword=.
+ +       0.004  * (normalized) nextword=region
+ +       0.0474 * (normalized) nextword=otechestvennyj
+ +       0.0049 * (normalized) nextword=tserkov
+ +       0.0371 * (normalized) nextword=impotryor
+ +       0.0255 * (normalized) nextword=veruyushchij
+ +       0.0339 * (normalized) nextword=hristianskij
+ +       0.0583 * (normalized) nextword=lyuboj
+ +       0.0049 * (normalized) nextword=naselenie
+ +       0.0037 * (normalized) nextword=chelovek
+ +       0.0732 * (normalized) nextword=obitatel
+ +      -0.3627 * (normalized) prevtag=pronoun
+ +       0.3735 * (normalized) prevtag=prep
+ +       0.4212 * (normalized) prevtag=adj
+ +       0.174  * (normalized) prevtag=.
+ +      -0.2594 * (normalized) prevtag=noun
+ +      -0.6944 * (normalized) prevtag=conj
+ +       0.3478 * (normalized) prevtag=verb
+ +      -0.3627 * (normalized) nexttag=neg
+ +       0.0583 * (normalized) nexttag=pronoun
+ +       0.1008 * (normalized) nexttag=prep
+ +      -0.031  * (normalized) nexttag=.
+ +       0.1279 * (normalized) nexttag=noun
+ +       0.1068 * (normalized) nexttag=adj
+ +      -0.9051 * (normalized) nastoyashchij=1
+ +       0.451 
+
+Number of kernel evaluations: 424 (93.545% cached)
+
+Classifier for classes: 3, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.36   * (normalized) ï»¿prevword=dachnyj
+ +      -1      * (normalized) ï»¿prevword=nastoyashchij
+ +       0.1502 * (normalized) ï»¿prevword=ot
+ +      -0.7747 * (normalized) ï»¿prevword=a
+ +       0.1711 * (normalized) ï»¿prevword=zhivoj
+ +       0.1163 * (normalized) ï»¿prevword=povsednevnyj
+ +       0.1497 * (normalized) ï»¿prevword=o
+ +       0.1716 * (normalized) ï»¿prevword=bojkij
+ +      -1.3876 * (normalized) ï»¿prevword=polnota
+ +       0.1164 * (normalized) ï»¿prevword=realnyj
+ +       0.1722 * (normalized) ï»¿prevword=sovremennyj
+ +       0.2256 * (normalized) ï»¿prevword=yavlyatsya
+ +       0.318  * (normalized) ï»¿prevword=sam
+ +      -0.5018 * (normalized) ï»¿prevword=on
+ +       0.3168 * (normalized) ï»¿prevword=drugoj
+ +       0.6125 * (normalized) ï»¿prevword=kniga
+ +       0.6128 * (normalized) ï»¿prevword=uchebnik
+ +       0.1711 * (normalized) ï»¿prevword=segodnyashnij
+ +      -0.5018 * (normalized) nextword=ne
+ +       0.36   * (normalized) nextword=. 
+ +      -0.0909 * (normalized) nextword=.
+ +       0.1163 * (normalized) nextword=i
+ +       0.1164 * (normalized) nextword=teoriya
+ +       0.1329 * (normalized) prevtag=pronoun
+ +       0.2999 * (normalized) prevtag=prep
+ +       0.2786 * (normalized) prevtag=adj
+ +      -0.1624 * (normalized) prevtag=noun
+ +      -0.7747 * (normalized) prevtag=conj
+ +       0.2256 * (normalized) prevtag=verb
+ +      -0.5018 * (normalized) nexttag=neg
+ +       0.2691 * (normalized) nexttag=.
+ +       0.1163 * (normalized) nexttag=conj
+ +       0.1164 * (normalized) nexttag=noun
+ +      -0.64   * (normalized) nastoyashchij=1
+ +       0.3715
+
+Number of kernel evaluations: 231 (94.52% cached)
+
+Classifier for classes: 3, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1489 * (normalized) ï»¿prevword=nastoyashchij
+ +      -0.0823 * (normalized) ï»¿prevword=a
+ +      -0.0827 * (normalized) ï»¿prevword=polnota
+ +       0.2313 * (normalized) ï»¿prevword=poutru
+ +       0.281  * (normalized) ï»¿prevword=kulturnyj
+ +      -0.1984 * (normalized) ï»¿prevword=on
+ +      -0.1984 * (normalized) nextword=ne
+ +      -0.3139 * (normalized) nextword=.
+ +       0.2313 * (normalized) nextword=rajon
+ +       0.281  * (normalized) nextword=Moskva
+ +      -0.1984 * (normalized) prevtag=pronoun
+ +       0.1321 * (normalized) prevtag=adj
+ +      -0.0827 * (normalized) prevtag=noun
+ +      -0.0823 * (normalized) prevtag=conj
+ +       0.2313 * (normalized) prevtag=adv
+ +      -0.1984 * (normalized) nexttag=neg
+ +      -0.3139 * (normalized) nexttag=.
+ +       0.5123 * (normalized) nexttag=noun
+ +      -0.1489 * (normalized) nastoyashchij=1
+ -       0.207 
+
+Number of kernel evaluations: 34 (87.681% cached)
+
+Classifier for classes: 4, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.4341 * (normalized) ï»¿prevword=nash
+ +      -0.4354 * (normalized) ï»¿prevword=svoj
+ +      -0.4306 * (normalized) ï»¿prevword=v
+ +      -0.1535 * (normalized) ï»¿prevword=ves
+ +       0.044  * (normalized) ï»¿prevword=.
+ +      -0.1825 * (normalized) ï»¿prevword=moj
+ +      -0.2794 * (normalized) ï»¿prevword=soznatelnyj
+ +       0.6238 * (normalized) ï»¿prevword=tvoj
+ +       1      * (normalized) ï»¿prevword=na
+ +      -0.2057 * (normalized) ï»¿prevword=protyazhenie
+ +       0.6714 * (normalized) ï»¿prevword=kak
+ +       1.3199 * (normalized) ï»¿prevword=obraz
+ +       1      * (normalized) ï»¿prevword=semejnaya
+ +      -0.0655 * (normalized) ï»¿prevword=sputnik
+ +       1      * (normalized) ï»¿prevword=proyavlenie
+ +       1      * (normalized) ï»¿prevword=dovolnyj
+ +      -0.1314 * (normalized) ï»¿prevword=oblegchat
+ +      -0.8924 * (normalized) ï»¿prevword=samostoyatelnyj
+ +      -0.4305 * (normalized) ï»¿prevword=dlya
+ +      -0.8932 * (normalized) ï»¿prevword=professionalnyj
+ +      -0.6794 * (normalized) ï»¿prevword=stil
+ +      -0.1316 * (normalized) ï»¿prevword=schitat
+ +       1      * (normalized) ï»¿prevword=mestnaya
+ +       0.22   * (normalized) ï»¿prevword=povsednevnyj
+ +      -0.3457 * (normalized) ï»¿prevword=ostavshijsya
+ +      -0.1313 * (normalized) ï»¿prevword=ukrashat
+ +      -0.2309 * (normalized) ï»¿prevword=radost
+ +      -0.8947 * (normalized) ï»¿prevword=dolgij
+ +       1      * (normalized) ï»¿prevword=norma
+ +      -0.6793 * (normalized) ï»¿prevword=Vinin
+ +      -0.1315 * (normalized) ï»¿prevword=prozhit
+ +       0.3596 * (normalized) ï»¿prevword=ego
+ +      -0.893  * (normalized) ï»¿prevword=lichnyj
+ +      -0.1821 * (normalized) ï»¿prevword=iz
+ +       0.761  * (normalized) ï»¿prevword=opyt
+ +      -0.6815 * (normalized) ï»¿prevword=smysl
+ +      -0.1825 * (normalized) ï»¿prevword=pri
+ +      -0.6794 * (normalized) ï»¿prevword=period
+ +      -0.3061 * (normalized) ï»¿prevword=ehpoha
+ +       0.694  * (normalized) ï»¿prevword=storona
+ +      -0.239  * (normalized) ï»¿prevword=minuta
+ +      -0.3061 * (normalized) ï»¿prevword=srok
+ +       1      * (normalized) ï»¿prevword=ehmotsionalnyj
+ +      -0.8929 * (normalized) ï»¿prevword=posleduyushchij
+ +       1      * (normalized) ï»¿prevword=nyneshnij
+ +      -0.8927 * (normalized) ï»¿prevword=novyj
+ +       1      * (normalized) ï»¿prevword=kochevoj
+ +      -0.6796 * (normalized) ï»¿prevword=poehtizatsiya
+ +      -0.0065 * (normalized) nextword=ne
+ +      -0.345  * (normalized) nextword=ya
+ +      -0.3182 * (normalized) nextword=.
+ +      -0.0055 * (normalized) nextword=i
+ +       0.6238 * (normalized) nextword=obyazatelno
+ +      -0.1535 * (normalized) nextword=chelovecheskij
+ +      -0.2057 * (normalized) nextword=mnogie
+ +      -0.2309 * (normalized) nextword=posle
+ +      -0.0058 * (normalized) nextword=nuzhno
+ +       0.0679 * (normalized) nextword=CHubajs
+ +      -0.0026 * (normalized) nextword=mozhno
+ +      -0.1323 * (normalized) nextword=vsegda
+ +      -0.5435 * (normalized) nextword=nachinat
+ +      -0.0502 * (normalized) nextword=vojti
+ +       0.2027 * (normalized) nextword=davat
+ +       0.0673 * (normalized) nextword=Ohlobystin
+ +       0.22   * (normalized) nextword=ryadovoj
+ +       0.5876 * (normalized) nextword=zamechatelnyj
+ +       0.0679 * (normalized) nextword=lyudi
+ +       0.2692 * (normalized) nextword=ego
+ +      -0.1821 * (normalized) nextword=podvizhnik
+ +       0.761  * (normalized) nextword=zaklyuchat
+ +      -0.1825 * (normalized) nextword=Pushkin
+ +      -0.3061 * (normalized) nextword=Ishvarakrishna
+ +      -0.3457 * (normalized) nextword=prinimat
+ +       0.694  * (normalized) nextword=Tolstoj
+ +      -0.239  * (normalized) nextword=kazatsya
+ +      -0.3061 * (normalized) nextword=obychnyj
+ +      -0.2221 * (normalized) prevtag=pronoun
+ +      -0.2257 * (normalized) prevtag=prep
+ +       0.2357 * (normalized) prevtag=adj
+ +       0.044  * (normalized) prevtag=.
+ +       0.0225 * (normalized) prevtag=noun
+ +       0.6714 * (normalized) prevtag=conj
+ +      -0.5258 * (normalized) prevtag=verb
+ +      -0.0065 * (normalized) nexttag=neg
+ +      -0.2815 * (normalized) nexttag=pronoun
+ +      -0.2309 * (normalized) nexttag=prep
+ +       0.3055 * (normalized) nexttag=.
+ +      -0.1323 * (normalized) nexttag=adv
+ +      -0.0055 * (normalized) nexttag=conj
+ +      -0.0797 * (normalized) nexttag=noun
+ +       0.654  * (normalized) nexttag=adj
+ +      -0.2147 * (normalized) nexttag=verb
+ +      -0.0084 * (normalized) nexttag=pred
+ +      -0.7939 * (normalized) ves=1
+ -       0.3305
+
+Number of kernel evaluations: 3656 (94.232% cached)
+
+Classifier for classes: 4, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.4614 * (normalized) ï»¿prevword=nash
+ +      -0.0829 * (normalized) ï»¿prevword=svoj
+ +      -0.2211 * (normalized) ï»¿prevword=v
+ +       1      * (normalized) ï»¿prevword=podvodnyj
+ +      -0.2243 * (normalized) ï»¿prevword=ves
+ +       0.3848 * (normalized) ï»¿prevword=.
+ +      -0.5631 * (normalized) ï»¿prevword=soznatelnyj
+ +      -0.1742 * (normalized) ï»¿prevword=protyazhenie
+ +       1      * (normalized) ï»¿prevword=monetarizovannyj
+ +       1      * (normalized) ï»¿prevword=kulturnaya
+ +      -0.3671 * (normalized) ï»¿prevword=oblegchat
+ +      -0.9316 * (normalized) ï»¿prevword=samostoyatelnyj
+ +      -0.2222 * (normalized) ï»¿prevword=dlya
+ +      -0.9317 * (normalized) ï»¿prevword=professionalnyj
+ +       0.5111 * (normalized) ï»¿prevword=uslozhnit
+ +      -0.1542 * (normalized) ï»¿prevword=stil
+ +      -0.3668 * (normalized) ï»¿prevword=schitat
+ +      -0.4019 * (normalized) ï»¿prevword=ostavshijsya
+ +      -0.367  * (normalized) ï»¿prevword=ukrashat
+ +      -0.3076 * (normalized) ï»¿prevword=radost
+ +       0.1764 * (normalized) ï»¿prevword=o
+ +      -0.9301 * (normalized) ï»¿prevword=dolgij
+ +      -0.1541 * (normalized) ï»¿prevword=Vinin
+ +      -0.3661 * (normalized) ï»¿prevword=prozhit
+ +       1      * (normalized) ï»¿prevword=stolichnyj
+ +       0.1611 * (normalized) ï»¿prevword=kulturnyj
+ +      -0.9309 * (normalized) ï»¿prevword=lichnyj
+ +      -0.4167 * (normalized) ï»¿prevword=iz
+ +       1      * (normalized) ï»¿prevword=hristianskij
+ +       1      * (normalized) ï»¿prevword=omolodit
+ +      -0.1524 * (normalized) ï»¿prevword=smysl
+ +       1      * (normalized) ï»¿prevword=s
+ +      -0.4167 * (normalized) ï»¿prevword=pri
+ +       1.8474 * (normalized) ï»¿prevword=uroven
+ +      -0.1541 * (normalized) ï»¿prevword=period
+ +      -0.3828 * (normalized) ï»¿prevword=ehpoha
+ +      -0.3826 * (normalized) ï»¿prevword=srok
+ +       1      * (normalized) ï»¿prevword=hozyajstvennyj
+ +      -0.9317 * (normalized) ï»¿prevword=posleduyushchij
+ +       1      * (normalized) ï»¿prevword=duhovnyj
+ +      -0.9313 * (normalized) ï»¿prevword=novyj
+ +      -0.1543 * (normalized) ï»¿prevword=poehtizatsiya
+ +      -0.1618 * (normalized) nextword=ne
+ +      -0.5631 * (normalized) nextword=ya
+ +       0.4463 * (normalized) nextword=v
+ +      -0.1614 * (normalized) nextword=.
+ +      -0.1619 * (normalized) nextword=i
+ +      -0.0829 * (normalized) nextword=stihotvorenie
+ +      -0.1954 * (normalized) nextword=ona
+ +      -0.1951 * (normalized) nextword=kotoryj
+ +      -0.2243 * (normalized) nextword=chelovecheskij
+ +      -0.1742 * (normalized) nextword=mnogie
+ +      -0.3076 * (normalized) nextword=posle
+ +       1      * (normalized) nextword=region
+ +      -0.161  * (normalized) nextword=nuzhno
+ +       0.576  * (normalized) nextword=otechestvennyj
+ +       0.5111 * (normalized) nextword=impotryor
+ +      -0.6588 * (normalized) nextword=nachinat
+ +      -0.6122 * (normalized) nextword=Katriehl
+ +      -0.4167 * (normalized) nextword=podvizhnik
+ +      -0.6127 * (normalized) nextword=Spasitel
+ +       0.5738 * (normalized) nextword=veruyushchij
+ +       0.1764 * (normalized) nextword=hristianskij
+ +       1      * (normalized) nextword=lyuboj
+ +      -0.4167 * (normalized) nextword=Pushkin
+ +       1      * (normalized) nextword=naselenie
+ +       1      * (normalized) nextword=chelovek
+ +      -0.3828 * (normalized) nextword=Ishvarakrishna
+ +      -0.0966 * (normalized) nextword=prinimat
+ +      -0.6128 * (normalized) nextword=progulka
+ +       0.297  * (normalized) nextword=obitatel
+ +      -0.3826 * (normalized) nextword=obychnyj
+ +      -0.7685 * (normalized) prevtag=pronoun
+ +      -0.1002 * (normalized) prevtag=prep
+ +       0.6087 * (normalized) prevtag=adj
+ +       0.3848 * (normalized) prevtag=.
+ +      -0.1689 * (normalized) prevtag=noun
+ +       0.0442 * (normalized) prevtag=verb
+ +      -0.1618 * (normalized) nexttag=neg
+ +      -0.1278 * (normalized) nexttag=pronoun
+ +       0.1387 * (normalized) nexttag=prep
+ +      -0.1614 * (normalized) nexttag=.
+ +      -0.1619 * (normalized) nexttag=conj
+ +       0.2887 * (normalized) nexttag=noun
+ +       1.102  * (normalized) nexttag=adj
+ +      -0.7554 * (normalized) nexttag=verb
+ +      -0.161  * (normalized) nexttag=pred
+ +      -0.5296 * (normalized) ves=1
+ -       0.3549
+
+Number of kernel evaluations: 3044 (93.998% cached)
+
+Classifier for classes: 4, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.7213 * (normalized) ï»¿prevword=nash
+ +      -0.7224 * (normalized) ï»¿prevword=svoj
+ +      -0.7854 * (normalized) ï»¿prevword=v
+ +      -0.1498 * (normalized) ï»¿prevword=ves
+ +       0.3617 * (normalized) ï»¿prevword=dachnyj
+ +      -0.0406 * (normalized) ï»¿prevword=.
+ +      -0.164  * (normalized) ï»¿prevword=moj
+ +      -0.1821 * (normalized) ï»¿prevword=soznatelnyj
+ +       1      * (normalized) ï»¿prevword=ot
+ +      -0.3265 * (normalized) ï»¿prevword=oblegchat
+ +      -0.9107 * (normalized) ï»¿prevword=samostoyatelnyj
+ +      -0.7847 * (normalized) ï»¿prevword=dlya
+ +      -0.9115 * (normalized) ï»¿prevword=professionalnyj
+ +      -0.4437 * (normalized) ï»¿prevword=stil
+ +      -0.3252 * (normalized) ï»¿prevword=schitat
+ +       1      * (normalized) ï»¿prevword=zhivoj
+ +       1      * (normalized) ï»¿prevword=povsednevnyj
+ +      -0.3381 * (normalized) ï»¿prevword=ostavshijsya
+ +      -0.3253 * (normalized) ï»¿prevword=ukrashat
+ +      -0.0305 * (normalized) ï»¿prevword=radost
+ +       1.2151 * (normalized) ï»¿prevword=o
+ +       1      * (normalized) ï»¿prevword=bojkij
+ +      -0.6986 * (normalized) ï»¿prevword=dolgij
+ +      -0.4439 * (normalized) ï»¿prevword=Vinin
+ +      -0.3264 * (normalized) ï»¿prevword=prozhit
+ +      -0.1501 * (normalized) ï»¿prevword=ego
+ +       0.6925 * (normalized) ï»¿prevword=realnyj
+ +      -0.9112 * (normalized) ï»¿prevword=lichnyj
+ +       1      * (normalized) ï»¿prevword=sovremennyj
+ +       1      * (normalized) ï»¿prevword=yavlyatsya
+ +      -0.2445 * (normalized) ï»¿prevword=iz
+ +       1      * (normalized) ï»¿prevword=sam
+ +      -0.2312 * (normalized) ï»¿prevword=smysl
+ +      -0.2446 * (normalized) ï»¿prevword=pri
+ +      -0.4443 * (normalized) ï»¿prevword=period
+ +       1      * (normalized) ï»¿prevword=drugoj
+ +      -0.0737 * (normalized) ï»¿prevword=ehpoha
+ +       1      * (normalized) ï»¿prevword=kniga
+ +       1      * (normalized) ï»¿prevword=uchebnik
+ +      -0.0737 * (normalized) ï»¿prevword=srok
+ +      -0.9104 * (normalized) ï»¿prevword=posleduyushchij
+ +       1      * (normalized) ï»¿prevword=segodnyashnij
+ +      -0.9104 * (normalized) ï»¿prevword=novyj
+ +      -0.4445 * (normalized) ï»¿prevword=poehtizatsiya
+ +      -0.1821 * (normalized) nextword=ya
+ +       0.3617 * (normalized) nextword=. 
+ +      -0.0049 * (normalized) nextword=.
+ +       0.0701 * (normalized) nextword=i
+ +      -0.0117 * (normalized) nextword=takoj
+ +      -0.0305 * (normalized) nextword=posle
+ +      -0.1028 * (normalized) nextword=vsegda
+ +      -0.0406 * (normalized) nextword=nachinat
+ +      -0.0495 * (normalized) nextword=vojti
+ +       0.6925 * (normalized) nextword=teoriya
+ +      -0.2445 * (normalized) nextword=podvizhnik
+ +      -0.2446 * (normalized) nextword=Pushkin
+ +      -0.0737 * (normalized) nextword=Ishvarakrishna
+ +      -0.0656 * (normalized) nextword=prinimat
+ +      -0.0737 * (normalized) nextword=obychnyj
+ +       0.0924 * (normalized) prevtag=pronoun
+ +       0.1558 * (normalized) prevtag=prep
+ +       0.2814 * (normalized) prevtag=adj
+ +      -0.0406 * (normalized) prevtag=.
+ +      -0.1855 * (normalized) prevtag=noun
+ +      -0.3033 * (normalized) prevtag=verb
+ +      -0.1938 * (normalized) nexttag=pronoun
+ +      -0.0305 * (normalized) nexttag=prep
+ +       0.3568 * (normalized) nexttag=.
+ +      -0.1028 * (normalized) nexttag=adv
+ +       0.0701 * (normalized) nexttag=conj
+ +       0.056  * (normalized) nexttag=noun
+ +      -0.1558 * (normalized) nexttag=verb
+ +       0.3617 * (normalized) nastoyashchij=1
+ +      -0.5724 * (normalized) ves=1
+ -       0.7226
+
+Number of kernel evaluations: 2209 (92.308% cached)
+
+Classifier for classes: 4, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1275 * (normalized) ï»¿prevword=svoj
+ +      -0.133  * (normalized) ï»¿prevword=v
+ +      -0.0849 * (normalized) ï»¿prevword=ves
+ +      -0.0952 * (normalized) ï»¿prevword=soznatelnyj
+ +      -0.0256 * (normalized) ï»¿prevword=samostoyatelnyj
+ +      -0.0258 * (normalized) ï»¿prevword=professionalnyj
+ +      -0.0953 * (normalized) ï»¿prevword=ostavshijsya
+ +      -0.0951 * (normalized) ï»¿prevword=dolgij
+ +       0.5113 * (normalized) ï»¿prevword=poutru
+ +       0.6496 * (normalized) ï»¿prevword=kulturnyj
+ +      -0.0262 * (normalized) ï»¿prevword=lichnyj
+ +      -0.0835 * (normalized) ï»¿prevword=iz
+ +      -0.0835 * (normalized) ï»¿prevword=pri
+ +      -0.1166 * (normalized) ï»¿prevword=ehpoha
+ +      -0.1165 * (normalized) ï»¿prevword=srok
+ +      -0.026  * (normalized) ï»¿prevword=posleduyushchij
+ +      -0.0262 * (normalized) ï»¿prevword=novyj
+ +      -0.0952 * (normalized) nextword=ya
+ +      -0.1298 * (normalized) nextword=.
+ +      -0.0951 * (normalized) nextword=i
+ +      -0.1275 * (normalized) nextword=stihotvorenie
+ +      -0.0329 * (normalized) nextword=tserkov
+ +      -0.0849 * (normalized) nextword=chlen
+ +      -0.0339 * (normalized) nextword=Katriehl
+ +       0.5113 * (normalized) nextword=rajon
+ +       0.6496 * (normalized) nextword=Moskva
+ +      -0.0835 * (normalized) nextword=podvizhnik
+ +      -0.0337 * (normalized) nextword=Spasitel
+ +      -0.0835 * (normalized) nextword=Pushkin
+ +      -0.1166 * (normalized) nextword=Ishvarakrishna
+ +      -0.0953 * (normalized) nextword=prinimat
+ +      -0.0326 * (normalized) nextword=progulka
+ +      -0.1165 * (normalized) nextword=obychnyj
+ +      -0.2124 * (normalized) prevtag=pronoun
+ +      -0.3    * (normalized) prevtag=prep
+ +       0.2342 * (normalized) prevtag=adj
+ +      -0.2331 * (normalized) prevtag=noun
+ +       0.5113 * (normalized) prevtag=adv
+ +      -0.0952 * (normalized) nexttag=pronoun
+ +      -0.1298 * (normalized) nexttag=.
+ +      -0.0951 * (normalized) nexttag=conj
+ +       0.4154 * (normalized) nexttag=noun
+ +      -0.0953 * (normalized) nexttag=verb
+ +      -0.0849 * (normalized) ves=1
+ -       0.9489
+
+Number of kernel evaluations: 873 (86.297% cached)
+
+Classifier for classes: 5, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2479 * (normalized) ï»¿prevword=nash
+ +       0.1696 * (normalized) ï»¿prevword=v
+ +       0.8693 * (normalized) ï»¿prevword=podvodnyj
+ +       0.0814 * (normalized) ï»¿prevword=.
+ +      -0.1235 * (normalized) ï»¿prevword=tvoj
+ +      -1      * (normalized) ï»¿prevword=na
+ +      -0.434  * (normalized) ï»¿prevword=kak
+ +      -0.6116 * (normalized) ï»¿prevword=obraz
+ +      -0.6509 * (normalized) ï»¿prevword=semejnaya
+ +       0.8689 * (normalized) ï»¿prevword=monetarizovannyj
+ +      -0.4199 * (normalized) ï»¿prevword=proyavlenie
+ +      -1      * (normalized) ï»¿prevword=dovolnyj
+ +       0.8681 * (normalized) ï»¿prevword=kulturnaya
+ +       0.2577 * (normalized) ï»¿prevword=oblegchat
+ +       0.2103 * (normalized) ï»¿prevword=dlya
+ +       0.026  * (normalized) ï»¿prevword=uslozhnit
+ +      -1      * (normalized) ï»¿prevword=mestnaya
+ +      -0.5205 * (normalized) ï»¿prevword=povsednevnyj
+ +       0.3867 * (normalized) ï»¿prevword=o
+ +      -0.4195 * (normalized) ï»¿prevword=norma
+ +      -0.2481 * (normalized) ï»¿prevword=ego
+ +       0.8696 * (normalized) ï»¿prevword=stolichnyj
+ +       0.8695 * (normalized) ï»¿prevword=hristianskij
+ +      -0.1805 * (normalized) ï»¿prevword=opyt
+ +       0.4239 * (normalized) ï»¿prevword=omolodit
+ +       0.6831 * (normalized) ï»¿prevword=s
+ +       1.5797 * (normalized) ï»¿prevword=uroven
+ +      -0.3961 * (normalized) ï»¿prevword=storona
+ +       0.8696 * (normalized) ï»¿prevword=hozyajstvennyj
+ +      -1      * (normalized) ï»¿prevword=ehmotsionalnyj
+ +       0.8691 * (normalized) ï»¿prevword=duhovnyj
+ +      -1      * (normalized) ï»¿prevword=nyneshnij
+ +      -0.6498 * (normalized) ï»¿prevword=kochevoj
+ +       0.4244 * (normalized) nextword=v
+ +       0.0012 * (normalized) nextword=.
+ +      -0.3007 * (normalized) nextword=i
+ +      -0.1235 * (normalized) nextword=obyazatelno
+ +       0.1413 * (normalized) nextword=region
+ +       0.2577 * (normalized) nextword=otechestvennyj
+ +      -0.1804 * (normalized) nextword=CHubajs
+ +       0.1415 * (normalized) nextword=tserkov
+ +       0.026  * (normalized) nextword=impotryor
+ +      -0.18   * (normalized) nextword=Ohlobystin
+ +      -0.5205 * (normalized) nextword=ryadovoj
+ +      -0.9401 * (normalized) nextword=zamechatelnyj
+ +      -0.1812 * (normalized) nextword=lyudi
+ +      -0.0699 * (normalized) nextword=ego
+ +      -0.1805 * (normalized) nextword=zaklyuchat
+ +       0.6042 * (normalized) nextword=veruyushchij
+ +       0.3867 * (normalized) nextword=hristianskij
+ +       0.2103 * (normalized) nextword=lyuboj
+ +       0.1417 * (normalized) nextword=naselenie
+ +       0.1409 * (normalized) nextword=chelovek
+ +      -0.3961 * (normalized) nextword=Tolstoj
+ +       0.5972 * (normalized) nextword=obitatel
+ +      -0.6195 * (normalized) prevtag=pronoun
+ +       0.4496 * (normalized) prevtag=prep
+ +       0.2628 * (normalized) prevtag=adj
+ +       0.0814 * (normalized) prevtag=.
+ +      -0.4479 * (normalized) prevtag=noun
+ +      -0.434  * (normalized) prevtag=conj
+ +       0.7076 * (normalized) prevtag=verb
+ +       0.1403 * (normalized) nexttag=pronoun
+ +       0.4244 * (normalized) nexttag=prep
+ +      -0.1223 * (normalized) nexttag=.
+ +      -0.3007 * (normalized) nexttag=conj
+ +       0.2508 * (normalized) nexttag=noun
+ +      -0.212  * (normalized) nexttag=adj
+ +      -0.1805 * (normalized) nexttag=verb
+ -       0.0108
+
+Number of kernel evaluations: 1106 (94.601% cached)
+
+Classifier for classes: 5, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.8631 * (normalized) ï»¿prevword=nash
+ +      -0.9782 * (normalized) ï»¿prevword=v
+ +       0.3854 * (normalized) ï»¿prevword=dachnyj
+ +      -0.3227 * (normalized) ï»¿prevword=tvoj
+ +      -0.9777 * (normalized) ï»¿prevword=na
+ +       1      * (normalized) ï»¿prevword=ot
+ +      -0.456  * (normalized) ï»¿prevword=kak
+ +      -0.6555 * (normalized) ï»¿prevword=obraz
+ +      -0.5129 * (normalized) ï»¿prevword=semejnaya
+ +      -0.6552 * (normalized) ï»¿prevword=proyavlenie
+ +      -1      * (normalized) ï»¿prevword=dovolnyj
+ +       0.9388 * (normalized) ï»¿prevword=zhivoj
+ +      -1      * (normalized) ï»¿prevword=mestnaya
+ +       0.4786 * (normalized) ï»¿prevword=povsednevnyj
+ +       1.0222 * (normalized) ï»¿prevword=o
+ +       0.9382 * (normalized) ï»¿prevword=bojkij
+ +      -0.6544 * (normalized) ï»¿prevword=norma
+ +      -0.8627 * (normalized) ï»¿prevword=ego
+ +       0.558  * (normalized) ï»¿prevword=realnyj
+ +       0.9379 * (normalized) ï»¿prevword=sovremennyj
+ +       0.544  * (normalized) ï»¿prevword=yavlyatsya
+ +       1      * (normalized) ï»¿prevword=sam
+ +      -0.0525 * (normalized) ï»¿prevword=opyt
+ +       1      * (normalized) ï»¿prevword=drugoj
+ +       1      * (normalized) ï»¿prevword=kniga
+ +      -0.2387 * (normalized) ï»¿prevword=storona
+ +       1      * (normalized) ï»¿prevword=uchebnik
+ +      -1      * (normalized) ï»¿prevword=ehmotsionalnyj
+ +      -1      * (normalized) ï»¿prevword=nyneshnij
+ +       0.9388 * (normalized) ï»¿prevword=segodnyashnij
+ +      -0.5125 * (normalized) ï»¿prevword=kochevoj
+ +       0.3854 * (normalized) nextword=. 
+ +       0.2172 * (normalized) nextword=.
+ +      -0.0254 * (normalized) nextword=i
+ +      -0.3227 * (normalized) nextword=obyazatelno
+ +      -0.5214 * (normalized) nextword=ryadovoj
+ +       0.558  * (normalized) nextword=teoriya
+ +      -0.0525 * (normalized) nextword=zaklyuchat
+ +      -0.2387 * (normalized) nextword=Tolstoj
+ +      -0.0484 * (normalized) prevtag=pronoun
+ +       0.0663 * (normalized) prevtag=prep
+ +       0.1504 * (normalized) prevtag=adj
+ +      -0.2562 * (normalized) prevtag=noun
+ +      -0.456  * (normalized) prevtag=conj
+ +       0.544  * (normalized) prevtag=verb
+ +       0.2799 * (normalized) nexttag=.
+ +      -0.0254 * (normalized) nexttag=conj
+ +       0.3194 * (normalized) nexttag=noun
+ +      -0.5214 * (normalized) nexttag=adj
+ +      -0.0525 * (normalized) nexttag=verb
+ +       0.3854 * (normalized) nastoyashchij=1
+ -       0.5861
+
+Number of kernel evaluations: 771 (91.933% cached)
+
+Classifier for classes: 5, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0416 * (normalized) ï»¿prevword=.
+ +      -0.0306 * (normalized) ï»¿prevword=tvoj
+ +      -0.2643 * (normalized) ï»¿prevword=obraz
+ +      -0.0786 * (normalized) ï»¿prevword=semejnaya
+ +      -0.0406 * (normalized) ï»¿prevword=dovolnyj
+ +      -0.0407 * (normalized) ï»¿prevword=mestnaya
+ +      -0.1179 * (normalized) ï»¿prevword=povsednevnyj
+ +       0.4022 * (normalized) ï»¿prevword=poutru
+ +       0.548  * (normalized) ï»¿prevword=kulturnyj
+ +      -0.1764 * (normalized) ï»¿prevword=storona
+ +      -0.0403 * (normalized) ï»¿prevword=ehmotsionalnyj
+ +      -0.0399 * (normalized) ï»¿prevword=nyneshnij
+ +      -0.0793 * (normalized) ï»¿prevword=kochevoj
+ +      -0.1616 * (normalized) nextword=.
+ +      -0.1579 * (normalized) nextword=i
+ +      -0.0306 * (normalized) nextword=obyazatelno
+ +      -0.0877 * (normalized) nextword=CHubajs
+ +      -0.0889 * (normalized) nextword=Ohlobystin
+ +      -0.1179 * (normalized) nextword=ryadovoj
+ +      -0.0416 * (normalized) nextword=zamechatelnyj
+ +      -0.0877 * (normalized) nextword=lyudi
+ +       0.4022 * (normalized) nextword=rajon
+ +       0.548  * (normalized) nextword=Moskva
+ +      -0.1764 * (normalized) nextword=Tolstoj
+ +      -0.0306 * (normalized) prevtag=pronoun
+ +       0.1107 * (normalized) prevtag=adj
+ +      -0.0416 * (normalized) prevtag=.
+ +      -0.4407 * (normalized) prevtag=noun
+ +       0.4022 * (normalized) prevtag=adv
+ +      -0.1922 * (normalized) nexttag=.
+ +      -0.1579 * (normalized) nexttag=conj
+ +       0.5096 * (normalized) nexttag=noun
+ +      -0.1594 * (normalized) nexttag=adj
+ -       0.7162
+
+Number of kernel evaluations: 251 (86.239% cached)
+
+Classifier for classes: 6, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.4442 * (normalized) ï»¿prevword=v
+ +      -0.9117 * (normalized) ï»¿prevword=podvodnyj
+ +       0.4037 * (normalized) ï»¿prevword=dachnyj
+ +      -0.1815 * (normalized) ï»¿prevword=.
+ +       0.8084 * (normalized) ï»¿prevword=ot
+ +      -0.936  * (normalized) ï»¿prevword=monetarizovannyj
+ +      -0.91   * (normalized) ï»¿prevword=kulturnaya
+ +      -0.1749 * (normalized) ï»¿prevword=dlya
+ +      -0.185  * (normalized) ï»¿prevword=uslozhnit
+ +       1      * (normalized) ï»¿prevword=zhivoj
+ +       1      * (normalized) ï»¿prevword=povsednevnyj
+ +       0.8081 * (normalized) ï»¿prevword=o
+ +       1      * (normalized) ï»¿prevword=bojkij
+ +      -0.9379 * (normalized) ï»¿prevword=stolichnyj
+ +       0.8547 * (normalized) ï»¿prevword=realnyj
+ +      -0.0882 * (normalized) ï»¿prevword=kulturnyj
+ +       1      * (normalized) ï»¿prevword=sovremennyj
+ +       1      * (normalized) ï»¿prevword=yavlyatsya
+ +       0.2809 * (normalized) ï»¿prevword=sam
+ +      -0.9206 * (normalized) ï»¿prevword=hristianskij
+ +      -0.9998 * (normalized) ï»¿prevword=omolodit
+ +      -1      * (normalized) ï»¿prevword=s
+ +      -1.3169 * (normalized) ï»¿prevword=uroven
+ +       0.2609 * (normalized) ï»¿prevword=drugoj
+ +       0.7152 * (normalized) ï»¿prevword=kniga
+ +       0.705  * (normalized) ï»¿prevword=uchebnik
+ +      -0.9014 * (normalized) ï»¿prevword=hozyajstvennyj
+ +      -0.9289 * (normalized) ï»¿prevword=duhovnyj
+ +       1      * (normalized) ï»¿prevword=segodnyashnij
+ +      -0.0888 * (normalized) nextword=v
+ +       0.4037 * (normalized) nextword=. 
+ +       0.1353 * (normalized) nextword=.
+ +       0.344  * (normalized) nextword=i
+ +      -0.0955 * (normalized) nextword=region
+ +      -0.1076 * (normalized) nextword=tserkov
+ +      -0.185  * (normalized) nextword=impotryor
+ +       0.8547 * (normalized) nextword=teoriya
+ +      -0.6639 * (normalized) nextword=hristianskij
+ +      -0.1749 * (normalized) nextword=lyuboj
+ +      -0.1052 * (normalized) nextword=naselenie
+ +      -0.1358 * (normalized) nextword=chelovek
+ +      -0.1809 * (normalized) nextword=obitatel
+ +       0.5418 * (normalized) prevtag=pronoun
+ +      -0.0026 * (normalized) prevtag=prep
+ +      -0.2763 * (normalized) prevtag=adj
+ +      -0.1815 * (normalized) prevtag=.
+ +       0.1034 * (normalized) prevtag=noun
+ +      -0.1848 * (normalized) prevtag=verb
+ +      -0.1749 * (normalized) nexttag=pronoun
+ +      -0.0888 * (normalized) nexttag=prep
+ +       0.539  * (normalized) nexttag=.
+ +       0.344  * (normalized) nexttag=conj
+ +       0.0446 * (normalized) nexttag=noun
+ +      -0.6639 * (normalized) nexttag=adj
+ +       0.4037 * (normalized) nastoyashchij=1
+ -       0.4502
+
+Number of kernel evaluations: 708 (92.843% cached)
+
+Classifier for classes: 6, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2288 * (normalized) ï»¿prevword=v
+ +      -0.0204 * (normalized) ï»¿prevword=podvodnyj
+ +      -0.1779 * (normalized) ï»¿prevword=.
+ +      -0.0204 * (normalized) ï»¿prevword=monetarizovannyj
+ +      -0.0205 * (normalized) ï»¿prevword=kulturnaya
+ +      -0.1781 * (normalized) ï»¿prevword=uslozhnit
+ +      -0.0197 * (normalized) ï»¿prevword=stolichnyj
+ +       0.489  * (normalized) ï»¿prevword=poutru
+ +       0.4161 * (normalized) ï»¿prevword=kulturnyj
+ +      -0.02   * (normalized) ï»¿prevword=hristianskij
+ +      -0.1778 * (normalized) ï»¿prevword=uroven
+ +      -0.0209 * (normalized) ï»¿prevword=hozyajstvennyj
+ +      -0.0206 * (normalized) ï»¿prevword=duhovnyj
+ +      -0.3602 * (normalized) nextword=v
+ +      -0.1425 * (normalized) nextword=.
+ +      -0.0759 * (normalized) nextword=region
+ +      -0.0768 * (normalized) nextword=tserkov
+ +      -0.1781 * (normalized) nextword=impotryor
+ +       0.489  * (normalized) nextword=rajon
+ +       0.7763 * (normalized) nextword=Moskva
+ +      -0.1778 * (normalized) nextword=naselenie
+ +      -0.0762 * (normalized) nextword=chelovek
+ +      -0.1779 * (normalized) nextword=obitatel
+ +      -0.2288 * (normalized) prevtag=prep
+ +       0.2736 * (normalized) prevtag=adj
+ +      -0.1779 * (normalized) prevtag=.
+ +      -0.1778 * (normalized) prevtag=noun
+ +      -0.1781 * (normalized) prevtag=verb
+ +       0.489  * (normalized) prevtag=adv
+ +      -0.3602 * (normalized) nexttag=prep
+ +      -0.1425 * (normalized) nexttag=.
+ +       0.5027 * (normalized) nexttag=noun
+ -       0.9688
+
+Number of kernel evaluations: 294 (89.831% cached)
+
+Classifier for classes: 7, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0624 * (normalized) ï»¿prevword=dachnyj
+ +      -0.0282 * (normalized) ï»¿prevword=ot
+ +      -0.1548 * (normalized) ï»¿prevword=povsednevnyj
+ +      -0.0288 * (normalized) ï»¿prevword=o
+ +       0.3296 * (normalized) ï»¿prevword=poutru
+ +      -0.4484 * (normalized) ï»¿prevword=realnyj
+ +       0.5512 * (normalized) ï»¿prevword=kulturnyj
+ +      -0.0432 * (normalized) ï»¿prevword=yavlyatsya
+ +      -0.0293 * (normalized) ï»¿prevword=sam
+ +      -0.0282 * (normalized) ï»¿prevword=drugoj
+ +      -0.0289 * (normalized) ï»¿prevword=kniga
+ +      -0.0287 * (normalized) ï»¿prevword=uchebnik
+ +      -0.0624 * (normalized) nextword=. 
+ +      -0.2153 * (normalized) nextword=.
+ +      -0.1548 * (normalized) nextword=i
+ +       0.3296 * (normalized) nextword=rajon
+ +      -0.4484 * (normalized) nextword=teoriya
+ +       0.5512 * (normalized) nextword=Moskva
+ +      -0.0574 * (normalized) prevtag=pronoun
+ +      -0.057  * (normalized) prevtag=prep
+ +      -0.1143 * (normalized) prevtag=adj
+ +      -0.0577 * (normalized) prevtag=noun
+ +      -0.0432 * (normalized) prevtag=verb
+ +       0.3296 * (normalized) prevtag=adv
+ +      -0.2777 * (normalized) nexttag=.
+ +      -0.1548 * (normalized) nexttag=conj
+ +       0.4325 * (normalized) nexttag=noun
+ +      -0.0624 * (normalized) nastoyashchij=1
+ -       0.421 
+
+Number of kernel evaluations: 146 (91.114% cached)
+
+
+
+Time taken to build model: 0.73 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          79               39.5    %
+Incorrectly Classified Instances       121               60.5    %
+Kappa statistic                          0.1903
+Mean absolute error                      0.1834
+Root mean squared error                  0.2995
+Relative absolute error                102.2506 %
+Root relative squared error            100.2198 %
+Total Number of Instances              200     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,231    0,032    0,333      0,231    0,273      0,236    0,877     0,317     0
+                 0,000    0,031    0,000      0,000    0,000      -0,038   0,519     0,055     1
+                 0,314    0,127    0,344      0,314    0,328      0,194    0,646     0,247     2
+                 0,500    0,000    1,000      0,500    0,667      0,702    0,651     0,516     3
+                 0,729    0,485    0,447      0,729    0,554      0,235    0,621     0,426     4
+                 0,308    0,023    0,667      0,308    0,421      0,403    0,629     0,315     5
+                 0,042    0,091    0,059      0,042    0,049      -0,057   0,576     0,140     6
+                 0,133    0,027    0,286      0,133    0,182      0,152    0,681     0,139     7
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,402     0,010     8
+Weighted Avg.    0,395    0,211    0,384      0,395    0,363      0,208    0,636     0,299     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i   <-- classified as
+  3  0  1  0  9  0  0  0  0 |  a = 0
+  0  0  3  0  4  1  1  0  0 |  b = 1
+  2  4 11  0 13  1  4  0  0 |  c = 2
+  0  1  1  3  0  0  1  0  0 |  d = 3
+  3  0  8  0 51  1  5  2  0 |  e = 4
+  0  0  3  0 14  8  1  0  0 |  f = 5
+  1  1  5  0 13  0  1  3  0 |  g = 6
+  0  0  0  0  9  1  3  2  0 |  h = 7
+  0  0  0  0  1  0  1  0  0 |  i = 8

@@ -1,0 +1,159 @@
+﻿=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     dataset_only-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    200
+Attributes:   5
+              ï»¿prevword
+              nextword
+              prevtag
+              nexttag
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ï»¿prevword:
+	nash	-> 4
+	svoj	-> 4
+	v	-> 4
+	podvodnyj	-> 2
+	ves	-> 4
+	dachnyj	-> 7
+	nastoyashchij	-> 3
+	postoyannyj	-> 1
+	.	-> 2
+	moj	-> 4
+	soznatelnyj	-> 4
+	telo	-> 2
+	tvoj	-> 5
+	sluchaj	-> 4
+	na	-> 2
+	ot	-> 7
+	poskolku	-> 2
+	protyazhenie	-> 4
+	kak	-> 5
+	nanesyonnyj	-> 2
+	obraz	-> 5
+	semejnaya	-> 5
+	partiya	-> 0
+	sputnik	-> 4
+	monetarizovannyj	-> 6
+	strahovanie	-> 2
+	proyavlenie	-> 5
+	k	-> 0
+	dovolnyj	-> 5
+	god	-> 2
+	kulturnaya	-> 6
+	oblegchat	-> 4
+	i	-> 1
+	samostoyatelnyj	-> 4
+	okonchanie	-> 2
+	dlya	-> 4
+	professionalnyj	-> 4
+	uslozhnit	-> 6
+	stil	-> 4
+	schitat	-> 4
+	a	-> 3
+	uslovie	-> 2
+	zhivoj	-> 7
+	mestnaya	-> 5
+	povsednevnyj	-> 5
+	ostavshijsya	-> 4
+	ukrashat	-> 4
+	radost	-> 4
+	o	-> 7
+	bojkij	-> 7
+	dolgij	-> 4
+	norma	-> 5
+	Vinin	-> 4
+	prozhit	-> 4
+	ego	-> 2
+	polnota	-> 3
+	stolichnyj	-> 6
+	poutru	-> 8
+	realnyj	-> 7
+	kulturnyj	-> 6
+	lichnyj	-> 4
+	sovremennyj	-> 7
+	tolko	-> 4
+	yavlyatsya	-> 7
+	iz	-> 4
+	sam	-> 7
+	on	-> 2
+	posle	-> 2
+	vechnyj	-> 2
+	hristianskij	-> 6
+	opyt	-> 5
+	omolodit	-> 6
+	pobeda	-> 1
+	najti	-> 2
+	smysl	-> 4
+	s	-> 6
+	pri	-> 4
+	chelovecheskij	-> 2
+	uroven	-> 6
+	period	-> 4
+	drugoj	-> 7
+	vremya	-> 0
+	ehpoha	-> 4
+	vozniknut	-> 1
+	prodlevat	-> 2
+	kniga	-> 7
+	storona	-> 5
+	uchebnik	-> 7
+	minuta	-> 4
+	srok	-> 4
+	hozyajstvennyj	-> 6
+	ehmotsionalnyj	-> 5
+	posleduyushchij	-> 4
+	duhovnyj	-> 6
+	nyneshnij	-> 5
+	chto	-> 1
+	segodnyashnij	-> 7
+	novyj	-> 4
+	kochevoj	-> 5
+	poehtizatsiya	-> 4
+(157/200 instances correct)
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          74               37      %
+Incorrectly Classified Instances       126               63      %
+Kappa statistic                          0.2356
+Mean absolute error                      0.14  
+Root mean squared error                  0.3742
+Relative absolute error                 78.0429 %
+Root relative squared error            125.1996 %
+Total Number of Instances              200     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,462    0,422    0,071      0,462    0,122      0,019    0,520     0,068     0
+                 0,000    0,021    0,000      0,000    0,000      -0,031   0,490     0,045     1
+                 0,343    0,061    0,545      0,343    0,421      0,343    0,641     0,302     2
+                 0,500    0,005    0,750      0,500    0,600      0,603    0,747     0,390     3
+                 0,600    0,192    0,627      0,600    0,613      0,412    0,704     0,516     4
+                 0,308    0,006    0,889      0,308    0,457      0,490    0,651     0,364     5
+                 0,125    0,017    0,500      0,125    0,200      0,206    0,554     0,167     6
+                 0,000    0,011    0,000      0,000    0,000      -0,029   0,495     0,075     7
+                 0,000    0,005    0,000      0,000    0,000      -0,007   0,497     0,010     8
+Weighted Avg.    0,370    0,110    0,518      0,370    0,398      0,308    0,630     0,325     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i   <-- classified as
+  6  0  0  0  7  0  0  0  0 |  a = 0
+  4  0  2  0  2  0  0  1  0 |  b = 1
+ 13  1 12  1  7  0  1  0  0 |  c = 2
+  2  0  1  3  0  0  0  0  0 |  d = 3
+ 25  0  2  0 42  0  1  0  0 |  e = 4
+ 13  0  2  0  2  8  0  1  0 |  f = 5
+  9  1  3  0  7  0  3  0  1 |  g = 6
+ 12  2  0  0  0  1  0  0  0 |  h = 7
+  1  0  0  0  0  0  1  0  0 |  i = 8
